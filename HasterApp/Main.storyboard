@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,12 +17,12 @@
         <!--Signin View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="SigninViewController" id="BYZ-38-t0r" customClass="SigninViewController" customModule="HesterDecorating" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SigninViewController" id="BYZ-38-t0r" customClass="SigninViewController" customModule="HasterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xQ-Km-LYf" customClass="ShadowView" customModule="HesterDecorating" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xQ-Km-LYf" customClass="ShadowView" customModule="HasterApp" customModuleProvider="target">
                                 <rect key="frame" x="20" y="388" width="335" height="42"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="39T-gG-fZe">
@@ -76,7 +76,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mY3-E6-g51" customClass="ShadowView" customModule="HesterDecorating" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mY3-E6-g51" customClass="ShadowView" customModule="HasterApp" customModuleProvider="target">
                                 <rect key="frame" x="20" y="326" width="335" height="42"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l2h-bl-dDC">
@@ -230,7 +230,7 @@
         <!--Home View Controller-->
         <scene sceneID="Wj1-ox-JqT">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="4nU-lh-OJ0" customClass="HomeViewController" customModule="HesterDecorating" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="4nU-lh-OJ0" customClass="HomeViewController" customModule="HasterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p9B-eh-Dtv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -272,7 +272,7 @@
                                     <constraint firstItem="LQC-co-39X" firstAttribute="centerY" secondItem="2i2-ru-1J8" secondAttribute="centerY" id="gWf-S8-knB"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4IG-2j-iST" customClass="ShadowView" customModule="HesterDecorating" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4IG-2j-iST" customClass="ShadowView" customModule="HasterApp" customModuleProvider="target">
                                 <rect key="frame" x="20" y="182.5" width="335" height="42"/>
                                 <subviews>
                                     <searchBar contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Search Job" translatesAutoresizingMaskIntoConstraints="NO" id="siH-1i-GdS" customClass="ModernSearchBar" customModule="ModernSearchBar">
@@ -322,17 +322,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are Working on Job: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYG-9Q-4pc">
-                                <rect key="frame" x="93" y="240.5" width="189.5" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="8I0-sV-3on"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are Working on Job: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYG-9Q-4pc">
+                                <rect key="frame" x="10" y="240.5" width="355" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ovo-1G-LCd">
-                                <rect key="frame" x="16" y="269.5" width="343" height="349.5"/>
+                                <rect key="frame" x="16" y="269" width="343" height="350"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62N-2i-eMc">
                                         <rect key="frame" x="4" y="8" width="335" height="30"/>
@@ -353,7 +350,7 @@
                                             <constraint firstAttribute="height" constant="1" id="gox-5L-JbX"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6O-1V-5aT" customClass="ShadowView" customModule="HesterDecorating" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6O-1V-5aT" customClass="ShadowView" customModule="HasterApp" customModuleProvider="target">
                                         <rect key="frame" x="4" y="50" width="335" height="42"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGa-Rx-DhZ">
@@ -724,7 +721,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckc-ph-ne8">
-                                <rect key="frame" x="67" y="270" width="240" height="350"/>
+                                <rect key="frame" x="67" y="269.5" width="240" height="350.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpB-XX-LTz">
                                         <rect key="frame" x="30" y="50" width="180" height="46"/>
@@ -790,17 +787,18 @@
                             <constraint firstItem="RyL-q3-oDi" firstAttribute="leading" secondItem="pFc-aB-k3u" secondAttribute="leading" id="Okj-27-fYv"/>
                             <constraint firstItem="ys8-0s-J6h" firstAttribute="top" secondItem="Ovo-1G-LCd" secondAttribute="bottom" constant="8" id="RK6-O0-TP9"/>
                             <constraint firstItem="iYG-9Q-4pc" firstAttribute="top" secondItem="4IG-2j-iST" secondAttribute="bottom" constant="16" id="VAg-T3-wVT"/>
+                            <constraint firstItem="pFc-aB-k3u" firstAttribute="trailing" secondItem="iYG-9Q-4pc" secondAttribute="trailing" constant="10" id="Yil-lV-n3k"/>
                             <constraint firstItem="Ovo-1G-LCd" firstAttribute="leading" secondItem="pFc-aB-k3u" secondAttribute="leading" constant="16" id="bNs-gx-cDI"/>
                             <constraint firstItem="BJk-lH-liT" firstAttribute="leading" secondItem="pFc-aB-k3u" secondAttribute="leading" constant="16" id="eil-Pf-mUN"/>
                             <constraint firstItem="BJk-lH-liT" firstAttribute="top" secondItem="itk-o8-eCC" secondAttribute="bottom" constant="1.5" id="fOO-tB-PIQ"/>
                             <constraint firstItem="4IG-2j-iST" firstAttribute="leading" secondItem="pFc-aB-k3u" secondAttribute="leading" constant="20" id="fb2-WG-v01"/>
                             <constraint firstAttribute="trailing" secondItem="4IG-2j-iST" secondAttribute="trailing" constant="20" id="fgK-nZ-Cnd"/>
                             <constraint firstItem="ckc-ph-ne8" firstAttribute="top" secondItem="iYG-9Q-4pc" secondAttribute="bottom" constant="8.5" id="gqP-iC-M8I"/>
+                            <constraint firstItem="iYG-9Q-4pc" firstAttribute="leading" secondItem="pFc-aB-k3u" secondAttribute="leading" constant="10" id="jl6-le-Lx6"/>
                             <constraint firstItem="ys8-0s-J6h" firstAttribute="top" secondItem="ckc-ph-ne8" secondAttribute="bottom" constant="7" id="mzZ-go-6AH"/>
                             <constraint firstItem="pFc-aB-k3u" firstAttribute="bottom" secondItem="Ovo-1G-LCd" secondAttribute="bottom" constant="48" id="nC7-In-4Vq"/>
                             <constraint firstItem="pFc-aB-k3u" firstAttribute="trailing" secondItem="RyL-q3-oDi" secondAttribute="trailing" id="sCL-0Y-9Sv"/>
                             <constraint firstItem="4IG-2j-iST" firstAttribute="top" secondItem="BJk-lH-liT" secondAttribute="bottom" constant="14.5" id="tuG-9P-yc6"/>
-                            <constraint firstItem="iYG-9Q-4pc" firstAttribute="centerX" secondItem="pFc-aB-k3u" secondAttribute="centerX" id="vaN-4H-QRm"/>
                             <constraint firstItem="ys8-0s-J6h" firstAttribute="centerX" secondItem="pFc-aB-k3u" secondAttribute="centerX" id="wzM-iH-ojB"/>
                         </constraints>
                     </view>
@@ -832,7 +830,7 @@
         <!--Current Period View Controller-->
         <scene sceneID="B2y-tZ-dAI">
             <objects>
-                <viewController storyboardIdentifier="CurrentPeriodViewController" id="OYi-29-26V" customClass="CurrentPeriodViewController" customModule="HesterDecorating" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CurrentPeriodViewController" id="OYi-29-26V" customClass="CurrentPeriodViewController" customModule="HasterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o0L-pM-J3X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -886,8 +884,8 @@
                                 <rect key="frame" x="0.0" y="87" width="375" height="580"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CurrentTableViewCell" rowHeight="326" id="Puh-1k-pDd" customClass="CurrentTableViewCell" customModule="HesterDecorating" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="375" height="326"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CurrentTableViewCell" rowHeight="326" id="Puh-1k-pDd" customClass="CurrentTableViewCell" customModule="HasterApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="326"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Puh-1k-pDd" id="qoo-5p-sXf">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="326"/>
@@ -1138,8 +1136,8 @@
                                             <outlet property="titleLbl" destination="mfo-Di-hZx" id="iyh-mr-DZZ"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="editCell" rowHeight="306" id="Gpa-Gf-uJD" customClass="CurrentTableViewCell" customModule="HesterDecorating" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="370.5" width="375" height="306"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="editCell" rowHeight="306" id="Gpa-Gf-uJD" customClass="CurrentTableViewCell" customModule="HasterApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="376" width="375" height="306"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gpa-Gf-uJD" id="pgE-wT-IeA">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="306"/>
@@ -1217,7 +1215,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaf-Sr-Mo2" customClass="ShadowView" customModule="HesterDecorating" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaf-Sr-Mo2" customClass="ShadowView" customModule="HasterApp" customModuleProvider="target">
                                                             <rect key="frame" x="115" y="91.5" width="240" height="42"/>
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4i-x3-6Oq">
@@ -1265,7 +1263,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nd0-QJ-exM" customClass="ShadowView" customModule="HesterDecorating" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nd0-QJ-exM" customClass="ShadowView" customModule="HasterApp" customModuleProvider="target">
                                                             <rect key="frame" x="115" y="141.5" width="240" height="42"/>
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHY-8i-LiE">
@@ -1495,7 +1493,7 @@
         <!--Menu View Controller-->
         <scene sceneID="vVK-rN-Vcj">
             <objects>
-                <viewController storyboardIdentifier="MenuViewController" id="Otb-js-8v1" customClass="MenuViewController" customModule="HesterDecorating" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" id="Otb-js-8v1" customClass="MenuViewController" customModule="HasterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sQv-kD-a0e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1538,8 +1536,8 @@
                                             </constraints>
                                         </view>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" id="NS8-Um-8xd" customClass="SelectionCell" customModule="HesterDecorating" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="271.5" width="300" height="44"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" id="NS8-Um-8xd" customClass="SelectionCell" customModule="HasterApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="277" width="300" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NS8-Um-8xd" id="Dxn-FW-3sn">
                                                     <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
@@ -1645,7 +1643,7 @@
         <!--View Controller-->
         <scene sceneID="hRp-JJ-mPH">
             <objects>
-                <viewController storyboardIdentifier="SDSViewController" id="RjN-SC-peI" customClass="SDSViewController" customModule="HesterDecorating" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SDSViewController" id="RjN-SC-peI" customClass="SDSViewController" customModule="HasterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="heR-hu-2is">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1682,15 +1680,15 @@
                                 </constraints>
                             </view>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lrB-En-R4r">
-                                <rect key="frame" x="0.0" y="87" width="375" height="51"/>
+                                <rect key="frame" x="0.0" y="87" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZNU-Xf-64h">
-                                <rect key="frame" x="0.0" y="138" width="375" height="529"/>
+                                <rect key="frame" x="0.0" y="143" width="375" height="524"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="56" id="50a-KU-PES">
-                                        <rect key="frame" x="0.0" y="44.5" width="375" height="56"/>
+                                        <rect key="frame" x="0.0" y="50" width="375" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="50a-KU-PES" id="XnO-dd-Xvb">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
@@ -1778,7 +1776,7 @@
         <!--Job History View Controller-->
         <scene sceneID="Ujx-c1-KvQ">
             <objects>
-                <viewController storyboardIdentifier="JobHistoryViewController" id="9xO-A0-kqT" customClass="JobHistoryViewController" customModule="HesterDecorating" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JobHistoryViewController" id="9xO-A0-kqT" customClass="JobHistoryViewController" customModule="HasterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CTK-J2-So3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1828,8 +1826,8 @@
                                 <rect key="frame" x="0.0" y="87" width="375" height="580"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CurrentTableViewCell" rowHeight="250" id="M5O-1v-yBL" customClass="CurrentTableViewCell" customModule="HesterDecorating" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="375" height="250"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CurrentTableViewCell" rowHeight="250" id="M5O-1v-yBL" customClass="CurrentTableViewCell" customModule="HasterApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M5O-1v-yBL" id="jzJ-5v-hHa">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
@@ -2095,19 +2093,19 @@ j</string>
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="arrow.left" catalog="system" width="128" height="95"/>
         <image name="ck" width="44" height="46"/>
         <image name="doc.fill" catalog="system" width="115" height="128"/>
-        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
-        <image name="lock" catalog="system" width="128" height="128"/>
+        <image name="line.horizontal.3" catalog="system" width="128" height="65"/>
+        <image name="lock" catalog="system" width="125" height="128"/>
         <image name="logo" width="250" height="110"/>
         <image name="logout" width="13" height="14"/>
         <image name="pe" width="60" height="54"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
-        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person" catalog="system" width="128" height="121"/>
         <image name="uck" width="46" height="54"/>
         <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
