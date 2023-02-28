@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
        IQKeyboardManager.shared.enable = true
-       if (UserDefaults.standard.object(forKey: "userid") as? String) != nil{
+       if let data = UserDefaults.standard.object(forKey: "loginData") {
                openHome()
        }
        
@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        let menuViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuViewController")
        let sideMenuController = SideMenuController(contentViewController: contentViewController, menuViewController: menuViewController)
        UIApplication.shared.windows.first?.rootViewController = sideMenuController
+       
    }
    // MARK: UISceneSession Lifecycle
    

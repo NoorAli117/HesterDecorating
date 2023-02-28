@@ -1305,8 +1305,8 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYM-6t-C48">
-                                                            <rect key="frame" x="20" y="152" width="79" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYM-6t-C48">
+                                                            <rect key="frame" x="20" y="152" width="71.5" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -1403,9 +1403,9 @@
                                                         <constraint firstItem="LYM-6t-C48" firstAttribute="top" secondItem="hEM-s3-GIX" secondAttribute="bottom" constant="29" id="9Md-RO-Yr5"/>
                                                         <constraint firstItem="70Y-Qi-0cX" firstAttribute="centerY" secondItem="9VE-yz-F6B" secondAttribute="centerY" id="Byx-wt-LDB"/>
                                                         <constraint firstItem="Vqo-gK-U4b" firstAttribute="centerY" secondItem="ixT-cn-V5y" secondAttribute="centerY" id="H67-4x-Yfc"/>
+                                                        <constraint firstItem="Nd0-QJ-exM" firstAttribute="leading" secondItem="gaf-Sr-Mo2" secondAttribute="leading" id="HrX-iB-852"/>
                                                         <constraint firstItem="sFd-ft-XJp" firstAttribute="centerY" secondItem="edf-zU-DpB" secondAttribute="centerY" id="Iu1-sC-iq9"/>
                                                         <constraint firstItem="Nd0-QJ-exM" firstAttribute="centerY" secondItem="LYM-6t-C48" secondAttribute="centerY" id="J5R-Lv-ofy"/>
-                                                        <constraint firstItem="Nd0-QJ-exM" firstAttribute="leading" secondItem="LYM-6t-C48" secondAttribute="trailing" constant="16" id="KGn-gP-O3h"/>
                                                         <constraint firstItem="cSD-i5-Sf3" firstAttribute="top" secondItem="hg7-8j-kYW" secondAttribute="top" constant="20" id="L1j-Bd-Zzl"/>
                                                         <constraint firstItem="Vqo-gK-U4b" firstAttribute="leading" secondItem="ixT-cn-V5y" secondAttribute="trailing" constant="8" symbolic="YES" id="NlI-at-uXY"/>
                                                         <constraint firstItem="ixT-cn-V5y" firstAttribute="centerY" secondItem="rIS-ti-6RP" secondAttribute="centerY" id="Pdt-cU-PVa"/>

@@ -50,6 +50,7 @@ class CurrentPeriodViewController: BaseViewController {
     @objc func editJob(sender:UIButton){
         let detail = ProfileShareVC.init()
         detail.delegate = self
+        detail.userID = userID
         detail.record = jobs[sender.tag]
         detail.modalPresentationStyle = .overFullScreen
         self.present(detail, animated: true)

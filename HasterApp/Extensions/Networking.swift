@@ -47,6 +47,7 @@ class NetworkManager: NSObject {
                 do {
                     let decoder = JSONDecoder()
                     let tweetRequest = try decoder.decode(CheckUserData.self, from: data)
+                    UserDefaults.standard.set(data, forKey: "loginData")
                     completion(tweetRequest,true)
                 } catch let error {
                     print(error)
@@ -74,6 +75,8 @@ class NetworkManager: NSObject {
     static func getSds(search:String,completion: @escaping (CheckSDS?) -> Void) {
         let urlString = NetworkPath.sds.url
         let parameters = ["q": search]
+        print(urlString)
+        print(parameters)
         AF.request(urlString, method: .post, parameters: parameters).responseString { response in
             guard let data = response.data else { return }
             do {
@@ -183,6 +186,7 @@ class NetworkManager: NSObject {
                           "emp_locked":emp_locked
                           
         ] as [String : Any]
+        print(urlString)
         print(parameters)
         AF.request(urlString, method: .post, parameters: parameters).responseString { response in
             if response.response?.statusCode == 200{

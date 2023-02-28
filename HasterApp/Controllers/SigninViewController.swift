@@ -14,8 +14,14 @@ class SigninViewController: BaseViewController {
     @IBOutlet weak var userTF: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        if let username = UserDefaults.standard.object(forKey: "username") as? String {
+            self.userTF.text = username
+        }
+        if let pass = UserDefaults.standard.object(forKey: "password") as? String {
+            self.passTF.text = pass
+        }
         
-        // Do any additional setup after loading the view.
     }
     @IBAction func forgotAction(_ sender: Any) {
     }
@@ -25,6 +31,8 @@ class SigninViewController: BaseViewController {
             self.showAlert(title: "", message: "Please Enter UserName and password")
         }
         else{
+            UserDefaults.standard.set(userTF.text!, forKey: "username")
+            UserDefaults.standard.set(passTF.text!, forKey: "password")
             callLogin()
         }
     }

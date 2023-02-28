@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,7 +14,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileShareVC" customModule="HesterDecorating" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileShareVC" customModule="HasterApp" customModuleProvider="target">
             <connections>
                 <outlet property="dc1Btn" destination="hPm-dm-6Be" id="VHO-wv-acb"/>
                 <outlet property="dc2Btn" destination="u0N-3M-ho2" id="ytH-i6-L3b"/>
@@ -152,11 +152,11 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdY-Au-hct" customClass="ShadowView" customModule="HesterDecorating" customModuleProvider="target">
-                            <rect key="frame" x="115.5" y="134.5" width="278.5" height="42"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdY-Au-hct" customClass="ShadowView" customModule="HasterApp" customModuleProvider="target">
+                            <rect key="frame" x="115" y="134.5" width="279" height="42"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nzj-tC-gRd">
-                                    <rect key="frame" x="8" y="0.0" width="270.5" height="42"/>
+                                    <rect key="frame" x="8" y="0.0" width="271" height="42"/>
                                     <state key="normal" title="Tap here to select date and time">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
@@ -198,16 +198,16 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1c-hg-9IW">
-                            <rect key="frame" x="20" y="145" width="79.5" height="21"/>
+                            <rect key="frame" x="20" y="145" width="79" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5h-SM-g1A" customClass="ShadowView" customModule="HesterDecorating" customModuleProvider="target">
-                            <rect key="frame" x="115.5" y="184.5" width="278.5" height="42"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5h-SM-g1A" customClass="ShadowView" customModule="HasterApp" customModuleProvider="target">
+                            <rect key="frame" x="115" y="184.5" width="279" height="42"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwt-bH-rb6">
-                                    <rect key="frame" x="8" y="0.0" width="270.5" height="42"/>
+                                    <rect key="frame" x="8" y="0.0" width="271" height="42"/>
                                     <state key="normal" title="Tap here to select date and time">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
@@ -248,8 +248,8 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUp-Em-s7v">
-                            <rect key="frame" x="20" y="195" width="79.5" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUp-Em-s7v">
+                            <rect key="frame" x="20" y="195" width="71.5" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -314,13 +314,17 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFw-67-GZr">
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFw-67-GZr">
                             <rect key="frame" x="20" y="293" width="25" height="25"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="oRq-zy-lZ1"/>
                                 <constraint firstAttribute="width" constant="25" id="qCn-Xx-2jo"/>
                             </constraints>
-                            <state key="normal" image="ck"/>
+                            <state key="normal" image="uck"/>
+                            <state key="selected" image="ck"/>
+                            <connections>
+                                <action selector="injryFreeAction:" destination="-1" eventType="touchUpInside" id="VGx-XK-ObL"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Injury Free Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCt-zf-5au">
                             <rect key="frame" x="51" y="295.5" width="113.5" height="20.5"/>
@@ -335,6 +339,10 @@
                                 <constraint firstAttribute="height" constant="25" id="ZhL-NG-A2R"/>
                             </constraints>
                             <state key="normal" image="uck"/>
+                            <state key="selected" image="ck"/>
+                            <connections>
+                                <action selector="lockEntryButton:" destination="-1" eventType="touchUpInside" id="J3f-NF-uNr"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lock this entry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yK9-rF-xdv">
                             <rect key="frame" x="282" y="295.5" width="112" height="20.5"/>
@@ -365,6 +373,7 @@
                         <constraint firstItem="u0N-3M-ho2" firstAttribute="centerY" secondItem="hPm-dm-6Be" secondAttribute="centerY" id="M8U-RB-Oee"/>
                         <constraint firstItem="VG1-Ml-rE5" firstAttribute="leading" secondItem="u0N-3M-ho2" secondAttribute="trailing" constant="8" symbolic="YES" id="OOC-cC-1Nk"/>
                         <constraint firstItem="VG1-Ml-rE5" firstAttribute="centerY" secondItem="u0N-3M-ho2" secondAttribute="centerY" id="OXe-0H-sdV"/>
+                        <constraint firstItem="d5h-SM-g1A" firstAttribute="leading" secondItem="rdY-Au-hct" secondAttribute="leading" id="Pai-E1-Fap"/>
                         <constraint firstItem="u0N-3M-ho2" firstAttribute="leading" secondItem="XIA-mS-LmG" secondAttribute="trailing" constant="20" id="Pq6-6A-Tmd"/>
                         <constraint firstAttribute="height" constant="430" id="Q1w-GB-wJs"/>
                         <constraint firstAttribute="trailing" secondItem="rdY-Au-hct" secondAttribute="trailing" constant="20" id="Qxr-iT-eFc"/>
@@ -372,7 +381,6 @@
                         <constraint firstItem="hPm-dm-6Be" firstAttribute="leading" secondItem="YQ6-VK-YxZ" secondAttribute="leading" id="TQD-R4-JTX"/>
                         <constraint firstItem="MFw-67-GZr" firstAttribute="leading" secondItem="HOU-gz-X0V" secondAttribute="leading" constant="20" symbolic="YES" id="TRH-SS-Gtr"/>
                         <constraint firstItem="zUp-Em-s7v" firstAttribute="leading" secondItem="HOU-gz-X0V" secondAttribute="leading" constant="20" symbolic="YES" id="VKi-zS-8ys"/>
-                        <constraint firstItem="d5h-SM-g1A" firstAttribute="leading" secondItem="zUp-Em-s7v" secondAttribute="trailing" constant="16" id="VjQ-ik-Wqw"/>
                         <constraint firstItem="Yty-Ce-xfR" firstAttribute="top" secondItem="5kw-nR-IWB" secondAttribute="bottom" constant="16" id="WQ0-Rc-4EC"/>
                         <constraint firstItem="rdY-Au-hct" firstAttribute="leading" secondItem="K1c-hg-9IW" secondAttribute="trailing" constant="16" id="ZRu-UX-NPe"/>
                         <constraint firstItem="22z-T2-YrI" firstAttribute="leading" secondItem="YQ6-VK-YxZ" secondAttribute="trailing" constant="4" id="bdb-fb-kqu"/>

@@ -8,7 +8,7 @@
 import UIKit
 import DLRadioButton
 import ActionSheetPicker_3_0
-protocol ProfileShareVCDelegate : class {
+protocol ProfileShareVCDelegate : AnyObject {
     func passData()
 }
 class ProfileShareVC: BaseViewController {
@@ -26,6 +26,7 @@ class ProfileShareVC: BaseViewController {
     
     @IBOutlet var holderView : UIView!
     var record : Records?
+    var userID = ""
     var rgHours : String = "1"
     var otHours : String = "0"
     var isStarted : Bool = true
@@ -94,6 +95,8 @@ class ProfileShareVC: BaseViewController {
         rgHoursBtn.isSelected = false
         rgHours = "0"
         otHours = "1"
+        record?.reg_hours = "0"
+        record?.ot_hours = "1"
     }
     
     @IBAction func regPressed(_ sender: Any) {
@@ -101,6 +104,8 @@ class ProfileShareVC: BaseViewController {
         rgHoursBtn.isSelected = true
         rgHours = "1"
         otHours = "0"
+        record?.reg_hours = "1"
+        record?.ot_hours = "0"
     }
     
     
@@ -108,12 +113,24 @@ class ProfileShareVC: BaseViewController {
         dc1Btn.isSelected = true
         dc2Btn.isSelected = false
         dc = "14"
+        record?.dc = "14"
     }
     
     @IBAction func dc2Action(_ sender: DLRadioButton) {
         dc1Btn.isSelected = false
         dc2Btn.isSelected = true
         dc = "30"
+        record?.dc = "30"
+    }
+    
+    @IBAction func injryFreeAction(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        record?.injury_free_day = sender.isSelected ? "1" : "0"
+    }
+    
+    @IBAction func lockEntryButton(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        record?.emp_locked = sender.isSelected ? "1" : "0"
     }
     
     @IBAction func startTimeAction(_ sender: UIButton) {
@@ -124,6 +141,8 @@ class ProfileShareVC: BaseViewController {
             dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
             if self.isStarted{
                 self.startTime = dateFormatter.string(from: (value as! Date))
+                self.startBtn.setTitle(self.startTime, for: .normal)
+                self.record?.start_time = self.startTime
                 print(self.startTime)
             }
         }, cancel: { picker in
@@ -137,7 +156,9 @@ class ProfileShareVC: BaseViewController {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
             if self.isStarted{
-                self.startTime = dateFormatter.string(from: (value as! Date))
+                self.endTime = dateFormatter.string(from: (value as! Date))
+                self.endBtn.setTitle(self.endTime, for: .normal)
+                self.record?.end_time = self.endTime
                 print(self.startTime)
             }
         }, cancel: { picker in
@@ -147,13 +168,20 @@ class ProfileShareVC: BaseViewController {
     
     @IBAction func updatePressed(_ sender: Any) {
         self.startAnimating()
-        NetworkManager.jobUpdate(id: record?.id ?? "1", uid: "", job_number: record?.job_no ?? "", dc: dc, start_time: startTime, end_time: endTime, reg_hours: rgHours, otHours: otHours, injury_free_day:injFree , emp_locked: lock) { data, status in
-            if status{
-                self.stopsAnimating()
-                self.delegate?.passData()
-                self.closeButtonAction()
-            }
+        let rr = [record!]
+        NetworkManager.jobBulkUpdate(id: userID, records: rr) { data, status in
+            self.stopsAnimating()
+            self.delegate?.passData()
+            self.closeButtonAction()
         }
+        
+//        NetworkManager.jobUpdate(id: record?.id ?? "1", uid: "", job_number: record?.job_no ?? "", dc: dc, start_time: startTime, end_time: endTime, reg_hours: rgHours, otHours: otHours, injury_free_day:injFree , emp_locked: lock) { data, status in
+//            if status{
+//                self.stopsAnimating()
+//                self.delegate?.passData()
+//                self.closeButtonAction()
+//            }
+//        }
     }
     @IBAction func closeButtonAction(){
         self.fadeBackgroundAnimation(true) {
