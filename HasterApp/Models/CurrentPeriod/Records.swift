@@ -13,6 +13,24 @@ struct Records : Codable {
 	var job_no : String?
 	var end_time : String?
 	var id : String?
+    var startDate: Date? {
+        get {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+            return dateFormatter.date(from: start_time!) }
+        set {
+            //            self.startDate = newValue
+        }
+    }
+    var endDate : Date? {
+        get {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+            return dateFormatter.date(from: end_time!) }
+        set {
+            //            self.startDate = newValue
+        }
+    }
 
 	enum CodingKeys: String, CodingKey {
 

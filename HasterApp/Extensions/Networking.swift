@@ -204,6 +204,10 @@ class NetworkManager: NSObject {
         
         var record : [[String:Any]] = []
         for a in records{
+            if a.startDate! > a.endDate! {
+                completion("Start Date Should be greater than end date", false)
+                return
+            }
             let dict  = [
                 "id":a.id ?? "",
                 "end_time":a.end_time ?? "",

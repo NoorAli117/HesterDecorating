@@ -16,6 +16,8 @@ class CurrentPeriodViewController: BaseViewController {
     var userID = ""
     var jobs : [Records] = []
     var records : [Records] = []
+    var startDate = Date()
+    var endDate = Date()
     override func viewDidLoad() {
         super.viewDidLoad()
         if let colorAsData = UserDefaults.standard.object(forKey: "userid") as? String{userID = colorAsData;self.getJobs()}
@@ -103,6 +105,7 @@ class CurrentPeriodViewController: BaseViewController {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
             self.records[sender.tag].start_time = dateFormatter.string(from: (value as! Date))
+            self.records[sender.tag].startDate = (value as! Date)
             
         }, cancel: { picker in
             
@@ -112,8 +115,8 @@ class CurrentPeriodViewController: BaseViewController {
         ActionSheetDatePicker.show(withTitle: "", datePickerMode: .dateAndTime, selectedDate: Date(), doneBlock: { picker, value, index in
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
-            dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
             self.records[sender.tag].end_time = dateFormatter.string(from: (value as! Date))
+            self.records[sender.tag].endDate = (value as! Date)
             
         }, cancel: { picker in
             

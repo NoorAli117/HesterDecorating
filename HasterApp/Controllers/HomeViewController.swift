@@ -40,6 +40,8 @@ class HomeViewController: BaseViewController {
     var isStarted : Bool = true
     var jobs : [JobsData] = []
     var startTime = ""
+    var startDate = Date()
+    var endDate: Date!
     var endTime = ""
     var isCovid = true
     var dc = 14
@@ -146,12 +148,18 @@ class HomeViewController: BaseViewController {
     @IBAction func timeAction(_ sender: UIButton) {
         ActionSheetDatePicker.show(withTitle: "", datePickerMode: .dateAndTime, selectedDate: Date(), doneBlock: { picker, value, index in
            let str = DateFormatter.localizedString(from: (value as! Date), dateStyle: .none, timeStyle: .short)
-            sender.setTitle(str, for: .normal)
+            
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+            sender.setTitle(dateFormatter.string(from: (value as! Date)), for: .normal)
             if self.isStarted{
                 self.startTime = dateFormatter.string(from: (value as! Date))
                 print(self.startTime)
+                self.startDate = (value as? Date)!
+            } else {
+                self.endTime = dateFormatter.string(from: (value as! Date))
+                print(self.endTime)
+                self.endDate = (value as? Date)!
             }
         }, cancel: { picker in
             
@@ -225,6 +233,10 @@ class HomeViewController: BaseViewController {
                 let dateFormatter = DateFormatter()
                 dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
                 self.endTime = dateFormatter.string(from: (Date()))
+                endDate = Date()
+            }
+            if endDate < startDate {
+                showAlert(title: "error", message: "End time should be greater than start time.")
             }
             NetworkManager.jobEnd(uid: userID, job_number: selectedJobs.job_number!, end_time: endTime, injury_free_day: 1, ip: ip) { data, status in
                 if status{

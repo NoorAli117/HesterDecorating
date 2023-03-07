@@ -143,6 +143,7 @@ class ProfileShareVC: BaseViewController {
                 self.startTime = dateFormatter.string(from: (value as! Date))
                 self.startBtn.setTitle(self.startTime, for: .normal)
                 self.record?.start_time = self.startTime
+                self.record?.startDate = value as? Date
                 print(self.startTime)
             }
         }, cancel: { picker in
@@ -159,7 +160,8 @@ class ProfileShareVC: BaseViewController {
                 self.endTime = dateFormatter.string(from: (value as! Date))
                 self.endBtn.setTitle(self.endTime, for: .normal)
                 self.record?.end_time = self.endTime
-                print(self.startTime)
+                self.record?.endDate = value as? Date
+                print(self.endTime)
             }
         }, cancel: { picker in
             
@@ -170,9 +172,14 @@ class ProfileShareVC: BaseViewController {
         self.startAnimating()
         let rr = [record!]
         NetworkManager.jobBulkUpdate(id: userID, records: rr) { data, status in
-            self.stopsAnimating()
-            self.delegate?.passData()
-            self.closeButtonAction()
+            if status{
+                self.stopsAnimating()
+                self.delegate?.passData()
+                self.closeButtonAction()}
+            else {
+                self.showAlert(title: "error", message: data ?? "")
+                self.stopsAnimating()
+            }
         }
         
 //        NetworkManager.jobUpdate(id: record?.id ?? "1", uid: "", job_number: record?.job_no ?? "", dc: dc, start_time: startTime, end_time: endTime, reg_hours: rgHours, otHours: otHours, injury_free_day:injFree , emp_locked: lock) { data, status in
