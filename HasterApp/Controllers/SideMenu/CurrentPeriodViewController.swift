@@ -103,7 +103,7 @@ class CurrentPeriodViewController: BaseViewController {
     @objc func startTimeAction(_ sender: UIButton) {
         ActionSheetDatePicker.show(withTitle: "", datePickerMode: .dateAndTime, selectedDate: Date(), doneBlock: { picker, value, index in
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
             self.records[sender.tag].start_time = dateFormatter.string(from: (value as! Date))
             self.records[sender.tag].startDate = (value as! Date)
             
@@ -114,7 +114,7 @@ class CurrentPeriodViewController: BaseViewController {
     @objc func timeAction(_ sender: UIButton) {
         ActionSheetDatePicker.show(withTitle: "", datePickerMode: .dateAndTime, selectedDate: Date(), doneBlock: { picker, value, index in
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
             self.records[sender.tag].end_time = dateFormatter.string(from: (value as! Date))
             self.records[sender.tag].endDate = (value as! Date)
             

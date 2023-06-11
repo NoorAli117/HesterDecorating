@@ -150,7 +150,7 @@ class HomeViewController: BaseViewController {
            let str = DateFormatter.localizedString(from: (value as! Date), dateStyle: .none, timeStyle: .short)
             
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
             sender.setTitle(dateFormatter.string(from: (value as! Date)), for: .normal)
             if self.isStarted{
                 self.startTime = dateFormatter.string(from: (value as! Date))
@@ -231,7 +231,7 @@ class HomeViewController: BaseViewController {
         else {
             if endTime == "" {
                 let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+                dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
                 self.endTime = dateFormatter.string(from: (Date()))
                 endDate = Date()
             }
@@ -276,7 +276,7 @@ extension HomeViewController:ModernSearchBarDelegate{
                 selectedJobs = a
                 jobLabel.text = "you are working on job: \(a.job_name ?? "")"
                 let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+                dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
                 self.startTime = dateFormatter.string(from: (Date()))
                 break
             }

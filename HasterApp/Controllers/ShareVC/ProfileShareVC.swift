@@ -138,7 +138,7 @@ class ProfileShareVC: BaseViewController {
            let str = DateFormatter.localizedString(from: (value as! Date), dateStyle: .none, timeStyle: .short)
             sender.setTitle(str, for: .normal)
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
             if self.isStarted{
                 self.startTime = dateFormatter.string(from: (value as! Date))
                 self.startBtn.setTitle(self.startTime, for: .normal)
@@ -155,7 +155,7 @@ class ProfileShareVC: BaseViewController {
            let str = DateFormatter.localizedString(from: (value as! Date), dateStyle: .none, timeStyle: .short)
             sender.setTitle(str, for: .normal)
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
             if self.isStarted{
                 self.endTime = dateFormatter.string(from: (value as! Date))
                 self.endBtn.setTitle(self.endTime, for: .normal)

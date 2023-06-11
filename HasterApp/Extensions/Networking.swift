@@ -203,9 +203,14 @@ class NetworkManager: NSObject {
         let urlString = NetworkPath.jobsBulkUpdate.url
         
         var record : [[String:Any]] = []
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
         for a in records{
-            if a.startDate! > a.endDate! {
-                completion("Start Date Should be greater than end date", false)
+            let startDate = dateFormatter.date(from: a.start_time ?? "")
+            let endDate = dateFormatter.date(from: a.end_time ?? "")
+            if (startDate ?? Date()) > (endDate ?? Date()) {
+                completion("End date time should be greater than start date time", false)
                 return
             }
             let dict  = [
