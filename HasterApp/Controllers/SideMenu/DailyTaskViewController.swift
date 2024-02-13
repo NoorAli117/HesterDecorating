@@ -77,7 +77,7 @@ class DailyTaskViewController: BaseViewController {
             NetworkManager.submitDailyTask(model: model) { msg, status in
                 self.stopsAnimating()
                 if status {
-                    self.showAlert(title: "Succeded", message: "The daily task has been submitted successfully")
+                    self.showAlert(title: "Succeeded", message: "The daily task has been submitted successfully")
                     self.model = DailyTaskModel()
                     self.tableView.reloadData()
                 }

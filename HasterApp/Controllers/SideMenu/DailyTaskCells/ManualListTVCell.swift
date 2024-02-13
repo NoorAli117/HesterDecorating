@@ -19,7 +19,7 @@ class ManualListTVCell: UITableViewCell, UITextFieldDelegate {
         entryTextField.delegate = self
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+    func textFieldDidChangeSelection(_ textField: UITextField) {
         if (textField == entryTextField) {
             self.entryCallBack?(entryTextField.text ?? "")
         }
