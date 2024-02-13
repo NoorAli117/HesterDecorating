@@ -48,3 +48,44 @@ extension UIView {
     }
 }
 
+
+extension UITableView {
+    func registerCell(type: UITableViewCell.Type, identifier: String? = nil) {
+        let cellId = String(describing: type)
+        register(UINib(nibName: cellId, bundle: nil), forCellReuseIdentifier: identifier ?? cellId)
+    }
+}
+
+class CustomTableView: UITableView {
+    @IBInspectable var enableSections: Bool = false
+    
+    override public func reloadData() {
+        super.reloadData()
+        
+        var emptySections = [Int]()
+        var flag = true
+        
+        for x in 0..<self.numberOfSections {
+            if self.numberOfRows(inSection: x) != 0 {
+                flag = false
+            } else {
+                emptySections.append(x)
+            }
+        }
+        if flag {
+            if self.viewWithTag(1111) == nil {
+                if let myView = UINib.init(nibName: "NoDataFoundView", bundle: nil).instantiate(withOwner: nil).first as? UIView {
+                    
+                    myView.tag = 1111
+                    myView.center = self.center
+                    self.backgroundView = myView
+                }
+            }
+            
+        } else {
+            if self.viewWithTag(1111) != nil {
+                self.backgroundView = nil
+            }
+        }
+    }
+}

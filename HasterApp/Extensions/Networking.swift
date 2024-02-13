@@ -20,6 +20,7 @@ class NetworkManager: NSObject {
         case updateJob = "timeclock-update.php"
         case currentPeriod = "current-period.php"
         case jobsBulkUpdate = "timeclock-update-bulk.php"
+        case dailyTask = "https://job.hpd-painters.com/wp-json/hester-timeclock/v1/add"
         static let baseURL = "https://job.hpd-painters.com/api/"
         
         var url: String {
@@ -240,4 +241,66 @@ class NetworkManager: NSObject {
         }
     }
     
+    static func submitDailyTask(model: DailyTaskModel, completion: @escaping (String?,Bool) -> Void) {
+        let urlString = NetworkPath.dailyTask.rawValue
+        
+        var parameters: [String: Any] = [
+            "lead_painter": model.leadPainter,
+            "date": model.date,
+            "project_name": model.projectName,
+            "job_number": model.jobNumber,
+            "task_completed": model.taskCompleted
+        ] as [ String: Any ]
+        
+        var index = 1
+        for x in 0..<model.safetyItemObj.count {
+            for y in 0..<model.safetyItemObj[x].options.count {
+                parameters.append(["q\(index)": "\(model.safetyItemObj[x].options[y].selection ?? 0)"])
+                index += 1
+            }
+        }
+        
+        for x in 0..<model.incidentObj.count {
+            parameters.append(["q\(index)": "\(model.incidentObj[x].selection ?? 0)"])
+        }
+        
+        parameters.append(["add_analytic_data": "yes"])
+        parameters.append(["today_performed": model.workTaskPerformaceList.list])
+        parameters.append(["aware_of": model.potentialHazardList.list])
+        parameters.append(["employee_signature": model.employeeSignatureList.list])
+        
+        print("URL: ", urlString)
+        print("Params: ", parameters)
+        
+        AF.request(urlString, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseString { response in
+            guard let data = response.data else { return }
+            do {
+                guard let dataString = String.init(data:data, encoding: .utf8) else { return }
+                print("Output", dataString)
+                
+                let decoder = JSONDecoder()
+                let model = try decoder.decode(DailyTaskResponse.self, from: data) as DailyTaskResponse
+                
+                if response.response?.statusCode == 200{
+                    completion(model.message ?? "", true)
+                }
+                else {
+                    completion(model.message, false)
+                }
+            } catch let error {
+                print(error)
+                completion(error.localizedDescription,false)
+            }
+        }
+    }
+    
+}
+
+extension Dictionary where Key == String, Value == Any {
+    
+    mutating func append(_ dict: [String:Any]) {
+        for (key, value) in dict {
+            self.updateValue(value, forKey: key)
+        }
+    }
 }

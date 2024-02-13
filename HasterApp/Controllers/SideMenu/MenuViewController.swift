@@ -19,8 +19,8 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private var themeColor = UIColor.white
-    var sideMenuDataSource : [String] = ["SDS Documents","Current Period","Job History","Logout"]
-    var sideMenuDataSourceImages : [String] = ["sds","cp","jh","lg"]
+    var sideMenuDataSource : [String] = ["SDS Documents","Current Period", "Daily Task", "Job History","Safety Manual","Logout"]
+    var sideMenuDataSourceImages : [String] = ["sds","cp","sds","jh","cp","lg"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -131,9 +131,19 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
             present(loginVC, animated: true, completion: nil)
         }
         else if indexPath.row == 2 {
+            let loginVC = DailyTaskViewController.instantiate(storyboardName: "Main")
+            loginVC.modalPresentationStyle = .fullScreen
+            present(loginVC, animated: true, completion: nil)
+        }
+        else if indexPath.row == 3 {
             let loginVC = JobHistoryViewController.instantiate(storyboardName: "Main")
             loginVC.modalPresentationStyle = .fullScreen
             present(loginVC, animated: true, completion: nil)
+        }
+        else if indexPath.row == 4 {
+            if let url = URL(string: "https://job.hpd-painters.com/downloads/") {
+                UIApplication.shared.open(url)
+            }
         }
         else{
             confirmLogout()

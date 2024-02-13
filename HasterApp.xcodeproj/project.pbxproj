@@ -7,7 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B707D1F4C07E8734A24C9763 /* Pods_HasterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C5C7D0A36B67A5A3059B06F /* Pods_HasterApp.framework */; };
+		4748D0168A70D5A6A30AC539 /* Pods_HasterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C88D740A59EFF1AEDB336C /* Pods_HasterApp.framework */; };
+		9444C2E02AEBC9120051FE14 /* NoDataFoundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9444C2DF2AEBC9120051FE14 /* NoDataFoundView.xib */; };
+		947334A02A9A399C00A36F49 /* DailyTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9473349F2A9A399C00A36F49 /* DailyTaskViewController.swift */; };
+		947334A82A9A89C800A36F49 /* DailyTaskTopTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947334A62A9A89C800A36F49 /* DailyTaskTopTVCell.swift */; };
+		947334A92A9A89C800A36F49 /* DailyTaskTopTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 947334A72A9A89C800A36F49 /* DailyTaskTopTVCell.xib */; };
+		947334AC2A9A8A4700A36F49 /* SafetyItemsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947334AA2A9A8A4700A36F49 /* SafetyItemsTVCell.swift */; };
+		947334AD2A9A8A4700A36F49 /* SafetyItemsTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 947334AB2A9A8A4700A36F49 /* SafetyItemsTVCell.xib */; };
+		947334B72A9A997500A36F49 /* DailyTasksHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947334B62A9A997500A36F49 /* DailyTasksHeaderView.swift */; };
+		947334B92A9A998100A36F49 /* DailyTasksHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 947334B82A9A998100A36F49 /* DailyTasksHeaderView.xib */; };
+		947334BC2A9AB75400A36F49 /* ManualListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947334BA2A9AB75400A36F49 /* ManualListTVCell.swift */; };
+		947334BD2A9AB75400A36F49 /* ManualListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 947334BB2A9AB75400A36F49 /* ManualListTVCell.xib */; };
+		94D862802A9B2ECA00EE2B6F /* IncidentsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D8627E2A9B2ECA00EE2B6F /* IncidentsTVCell.swift */; };
+		94D862812A9B2ECA00EE2B6F /* IncidentsTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94D8627F2A9B2ECA00EE2B6F /* IncidentsTVCell.xib */; };
+		94D862842A9B52F200EE2B6F /* SubmitTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D862822A9B52F200EE2B6F /* SubmitTVCell.swift */; };
+		94D862852A9B52F200EE2B6F /* SubmitTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94D862832A9B52F200EE2B6F /* SubmitTVCell.xib */; };
+		94D862872A9B548800EE2B6F /* DailyTasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D862862A9B548800EE2B6F /* DailyTasksModel.swift */; };
 		FA0F3D6D28F19203000F3F2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F3D6C28F19203000F3F2A /* AppDelegate.swift */; };
 		FA0F3D6F28F19203000F3F2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F3D6E28F19203000F3F2A /* SceneDelegate.swift */; };
 		FA0F3D7628F19205000F3F2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0F3D7528F19205000F3F2A /* Assets.xcassets */; };
@@ -57,9 +72,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		27941B0248AB5A152D839701 /* Pods-HasterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasterApp.release.xcconfig"; path = "Target Support Files/Pods-HasterApp/Pods-HasterApp.release.xcconfig"; sourceTree = "<group>"; };
-		3C5C7D0A36B67A5A3059B06F /* Pods_HasterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HasterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6881606C08A1B3416D79568 /* Pods-HasterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasterApp.debug.xcconfig"; path = "Target Support Files/Pods-HasterApp/Pods-HasterApp.debug.xcconfig"; sourceTree = "<group>"; };
+		537B043CF09F9A6135FBDCB2 /* Pods-HasterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasterApp.debug.xcconfig"; path = "Target Support Files/Pods-HasterApp/Pods-HasterApp.debug.xcconfig"; sourceTree = "<group>"; };
+		59C88D740A59EFF1AEDB336C /* Pods_HasterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HasterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E0AD07E75309D4A680B2E57 /* Pods-HasterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasterApp.release.xcconfig"; path = "Target Support Files/Pods-HasterApp/Pods-HasterApp.release.xcconfig"; sourceTree = "<group>"; };
+		9444C2DF2AEBC9120051FE14 /* NoDataFoundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataFoundView.xib; sourceTree = "<group>"; };
+		9473349F2A9A399C00A36F49 /* DailyTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTaskViewController.swift; sourceTree = "<group>"; };
+		947334A62A9A89C800A36F49 /* DailyTaskTopTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTaskTopTVCell.swift; sourceTree = "<group>"; };
+		947334A72A9A89C800A36F49 /* DailyTaskTopTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyTaskTopTVCell.xib; sourceTree = "<group>"; };
+		947334AA2A9A8A4700A36F49 /* SafetyItemsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyItemsTVCell.swift; sourceTree = "<group>"; };
+		947334AB2A9A8A4700A36F49 /* SafetyItemsTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SafetyItemsTVCell.xib; sourceTree = "<group>"; };
+		947334B62A9A997500A36F49 /* DailyTasksHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTasksHeaderView.swift; sourceTree = "<group>"; };
+		947334B82A9A998100A36F49 /* DailyTasksHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyTasksHeaderView.xib; sourceTree = "<group>"; };
+		947334BA2A9AB75400A36F49 /* ManualListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualListTVCell.swift; sourceTree = "<group>"; };
+		947334BB2A9AB75400A36F49 /* ManualListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManualListTVCell.xib; sourceTree = "<group>"; };
+		94D8627E2A9B2ECA00EE2B6F /* IncidentsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentsTVCell.swift; sourceTree = "<group>"; };
+		94D8627F2A9B2ECA00EE2B6F /* IncidentsTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IncidentsTVCell.xib; sourceTree = "<group>"; };
+		94D862822A9B52F200EE2B6F /* SubmitTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTVCell.swift; sourceTree = "<group>"; };
+		94D862832A9B52F200EE2B6F /* SubmitTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubmitTVCell.xib; sourceTree = "<group>"; };
+		94D862862A9B548800EE2B6F /* DailyTasksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTasksModel.swift; sourceTree = "<group>"; };
 		FA0F3D6928F19203000F3F2A /* HasterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HasterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0F3D6C28F19203000F3F2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA0F3D6E28F19203000F3F2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,26 +145,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B707D1F4C07E8734A24C9763 /* Pods_HasterApp.framework in Frameworks */,
+				4748D0168A70D5A6A30AC539 /* Pods_HasterApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5C5292859AF1C6DDF4F28CA0 /* Frameworks */ = {
+		5D3CE0591313E3E23FDE6054 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3C5C7D0A36B67A5A3059B06F /* Pods_HasterApp.framework */,
+				59C88D740A59EFF1AEDB336C /* Pods_HasterApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		947334A12A9A878C00A36F49 /* DailyTaskCells */ = {
+			isa = PBXGroup;
+			children = (
+				947334B82A9A998100A36F49 /* DailyTasksHeaderView.xib */,
+				947334B62A9A997500A36F49 /* DailyTasksHeaderView.swift */,
+				947334A72A9A89C800A36F49 /* DailyTaskTopTVCell.xib */,
+				947334A62A9A89C800A36F49 /* DailyTaskTopTVCell.swift */,
+				947334AB2A9A8A4700A36F49 /* SafetyItemsTVCell.xib */,
+				947334AA2A9A8A4700A36F49 /* SafetyItemsTVCell.swift */,
+				947334BB2A9AB75400A36F49 /* ManualListTVCell.xib */,
+				947334BA2A9AB75400A36F49 /* ManualListTVCell.swift */,
+				94D8627F2A9B2ECA00EE2B6F /* IncidentsTVCell.xib */,
+				94D8627E2A9B2ECA00EE2B6F /* IncidentsTVCell.swift */,
+				94D862832A9B52F200EE2B6F /* SubmitTVCell.xib */,
+				94D862822A9B52F200EE2B6F /* SubmitTVCell.swift */,
+			);
+			path = DailyTaskCells;
 			sourceTree = "<group>";
 		};
 		9762290C84221E216E660FD9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C6881606C08A1B3416D79568 /* Pods-HasterApp.debug.xcconfig */,
-				27941B0248AB5A152D839701 /* Pods-HasterApp.release.xcconfig */,
+				537B043CF09F9A6135FBDCB2 /* Pods-HasterApp.debug.xcconfig */,
+				5E0AD07E75309D4A680B2E57 /* Pods-HasterApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -145,7 +194,7 @@
 				FA0F3D6B28F19203000F3F2A /* HasterApp */,
 				FA0F3D6A28F19203000F3F2A /* Products */,
 				9762290C84221E216E660FD9 /* Pods */,
-				5C5292859AF1C6DDF4F28CA0 /* Frameworks */,
+				5D3CE0591313E3E23FDE6054 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -294,6 +343,9 @@
 				FA0F3DB228F19239000F3F2A /* SDSViewController.swift */,
 				FA0F3DB328F19239000F3F2A /* CurrentPeriodViewController.swift */,
 				FA0F3DB428F19239000F3F2A /* MenuViewController.swift */,
+				9473349F2A9A399C00A36F49 /* DailyTaskViewController.swift */,
+				94D862862A9B548800EE2B6F /* DailyTasksModel.swift */,
+				947334A12A9A878C00A36F49 /* DailyTaskCells */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -303,6 +355,7 @@
 			children = (
 				FA0F3DB028F19239000F3F2A /* PropertyHeaderView.swift */,
 				FA0F3DB128F19239000F3F2A /* PropertyHeaderView.xib */,
+				9444C2DF2AEBC9120051FE14 /* NoDataFoundView.xib */,
 			);
 			path = SDSHeaderView;
 			sourceTree = "<group>";
@@ -314,11 +367,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA0F3D7D28F19205000F3F2A /* Build configuration list for PBXNativeTarget "HasterApp" */;
 			buildPhases = (
-				81CD7F489A5FB5BFE78652E1 /* [CP] Check Pods Manifest.lock */,
+				C7C31730138EB9015E2EDBA1 /* [CP] Check Pods Manifest.lock */,
 				FA0F3D6528F19203000F3F2A /* Sources */,
 				FA0F3D6628F19203000F3F2A /* Frameworks */,
 				FA0F3D6728F19203000F3F2A /* Resources */,
-				EFF89FB71D93780BCBFA5F4B /* [CP] Embed Pods Frameworks */,
+				AFDB3E77EF76F4610296321D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -367,10 +420,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947334BD2A9AB75400A36F49 /* ManualListTVCell.xib in Resources */,
 				FA0F3DD528F19239000F3F2A /* ProfileShareVC.xib in Resources */,
+				94D862852A9B52F200EE2B6F /* SubmitTVCell.xib in Resources */,
 				FA0F3DD328F19239000F3F2A /* Main.storyboard in Resources */,
+				947334A92A9A89C800A36F49 /* DailyTaskTopTVCell.xib in Resources */,
 				FA0F3D7928F19205000F3F2A /* LaunchScreen.storyboard in Resources */,
 				FA0F3DDB28F19239000F3F2A /* PropertyHeaderView.xib in Resources */,
+				947334AD2A9A8A4700A36F49 /* SafetyItemsTVCell.xib in Resources */,
+				94D862812A9B2ECA00EE2B6F /* IncidentsTVCell.xib in Resources */,
+				947334B92A9A998100A36F49 /* DailyTasksHeaderView.xib in Resources */,
+				9444C2E02AEBC9120051FE14 /* NoDataFoundView.xib in Resources */,
 				FA0F3D7628F19205000F3F2A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,7 +438,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		81CD7F489A5FB5BFE78652E1 /* [CP] Check Pods Manifest.lock */ = {
+		AFDB3E77EF76F4610296321D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HasterApp/Pods-HasterApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HasterApp/Pods-HasterApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HasterApp/Pods-HasterApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7C31730138EB9015E2EDBA1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -400,23 +477,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EFF89FB71D93780BCBFA5F4B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HasterApp/Pods-HasterApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HasterApp/Pods-HasterApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HasterApp/Pods-HasterApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -426,18 +486,23 @@
 			files = (
 				FA0F3DCD28F19239000F3F2A /* CheckJobsData.swift in Sources */,
 				FA0F3DC828F19239000F3F2A /* UITextField+Extensions.swift in Sources */,
+				947334A82A9A89C800A36F49 /* DailyTaskTopTVCell.swift in Sources */,
 				FA0F3DD628F19239000F3F2A /* BaseViewController.swift in Sources */,
 				FA0F3DD728F19239000F3F2A /* HomeViewController.swift in Sources */,
 				FA0F3DC628F19239000F3F2A /* Dictionary+Extension.swift in Sources */,
 				FA0F3DDA28F19239000F3F2A /* PropertyHeaderView.swift in Sources */,
 				FA0F3DCE28F19239000F3F2A /* Records.swift in Sources */,
 				FA0F3DBA28F19239000F3F2A /* UIColor+Extension.swift in Sources */,
+				947334BC2A9AB75400A36F49 /* ManualListTVCell.swift in Sources */,
 				FA0F3DC728F19239000F3F2A /* CornerRadius.swift in Sources */,
+				94D862842A9B52F200EE2B6F /* SubmitTVCell.swift in Sources */,
 				FA0F3DB628F19239000F3F2A /* ShadowView.swift in Sources */,
+				947334B72A9A997500A36F49 /* DailyTasksHeaderView.swift in Sources */,
 				FA0F3DBC28F19239000F3F2A /* NSObject+Extension.swift in Sources */,
 				FA0F3DD128F19239000F3F2A /* User.swift in Sources */,
 				FA0F3DD028F19239000F3F2A /* CheckUserData.swift in Sources */,
 				FA0F3DDC28F19239000F3F2A /* SDSViewController.swift in Sources */,
+				94D862872A9B548800EE2B6F /* DailyTasksModel.swift in Sources */,
 				FA0F3D6D28F19203000F3F2A /* AppDelegate.swift in Sources */,
 				FA0F3DCC28F19239000F3F2A /* JobsData.swift in Sources */,
 				FA0F3DD428F19239000F3F2A /* ProfileShareVC.swift in Sources */,
@@ -453,6 +518,7 @@
 				FA0F3DD228F19239000F3F2A /* UserData.swift in Sources */,
 				FA0F3DBB28F19239000F3F2A /* Date+Extension.swift in Sources */,
 				FA0F3DBF28F19239000F3F2A /* Bundle+Extension.swift in Sources */,
+				947334A02A9A399C00A36F49 /* DailyTaskViewController.swift in Sources */,
 				FA0F3DC528F19239000F3F2A /* String+Html.swift in Sources */,
 				FA0F3DCB28F19239000F3F2A /* Files.swift in Sources */,
 				FA0F3DB728F19239000F3F2A /* Networking.swift in Sources */,
@@ -464,7 +530,9 @@
 				FA0F3DCF28F19239000F3F2A /* CheckGetJobs.swift in Sources */,
 				FA0F3DC228F19239000F3F2A /* String+Extension.swift in Sources */,
 				FA0F3DB828F19239000F3F2A /* UINavigation+Extension.swift in Sources */,
+				947334AC2A9A8A4700A36F49 /* SafetyItemsTVCell.swift in Sources */,
 				FA0F3DD928F19239000F3F2A /* CurrentTableViewCell.swift in Sources */,
+				94D862802A9B2ECA00EE2B6F /* IncidentsTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +612,7 @@
 		};
 		FA0F3D7C28F19205000F3F2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E0AD07E75309D4A680B2E57 /* Pods-HasterApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -598,12 +667,12 @@
 		};
 		FA0F3D7E28F19205000F3F2A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6881606C08A1B3416D79568 /* Pods-HasterApp.debug.xcconfig */;
+			baseConfigurationReference = 537B043CF09F9A6135FBDCB2 /* Pods-HasterApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_TEAM = 735Q3252C8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HasterApp/Info.plist;
@@ -622,6 +691,9 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hesterdecorating.us;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -630,12 +702,12 @@
 		};
 		FA0F3D7F28F19205000F3F2A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27941B0248AB5A152D839701 /* Pods-HasterApp.release.xcconfig */;
+			baseConfigurationReference = 5E0AD07E75309D4A680B2E57 /* Pods-HasterApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_TEAM = 735Q3252C8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HasterApp/Info.plist;
@@ -654,6 +726,9 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hesterdecorating.us;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

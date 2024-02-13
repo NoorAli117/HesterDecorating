@@ -10,7 +10,7 @@ import SwiftyJSON
 
 class SDSViewController: BaseViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: CustomTableView!
     @IBOutlet weak var searchBar: UISearchBar!
     var sdsDocs : [SDSData] = []
     override func viewDidLoad() {
@@ -69,12 +69,10 @@ extension SDSViewController : UITableViewDataSource, UITableViewDelegate{
             return sdsDocs[section].files?.count ?? 0
         }
         return 0
-//        return sdsDocs[section].files?.count ?? 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
         let nameLbl = cell.contentView.viewWithTag(2) as? UITextView
-        let imageCont = cell.contentView.viewWithTag(1) as? UIImageView
         
         nameLbl?.text = sdsDocs[indexPath.section].files?[indexPath.row].url
         

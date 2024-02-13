@@ -26,7 +26,7 @@ public class ModernSearchBarIcon : NSObject {
             let podBundle = Bundle(for: ModernSearchBarIcon.self)
             if let url = podBundle.url(forResource: "ModernSearchBar", withExtension: "bundle") {
                 let bundle = Bundle(url: url)
-                return UIImage(named: name, in: bundle, compatibleWith: nil) ?? UIImage(named: "uck")!
+                return UIImage(named: name, in: bundle, compatibleWith: nil)!
             }
             return UIImage()
         }

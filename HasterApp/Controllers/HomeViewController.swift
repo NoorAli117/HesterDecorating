@@ -72,6 +72,18 @@ class HomeViewController: BaseViewController {
         timeLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .none, timeStyle: .medium)
     }
     
+    @IBAction func SDSDocumentAction(_ sender: Any) {
+        let loginVC = SDSViewController.instantiate(storyboardName: "Main")
+        loginVC.modalPresentationStyle = .fullScreen
+        present(loginVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func DailyHazardAction(_ sender: Any) {
+        let loginVC = DailyTaskViewController.instantiate(storyboardName: "Main")
+        loginVC.modalPresentationStyle = .fullScreen
+        present(loginVC, animated: true, completion: nil)
+    }
+    
     @IBAction func menuAction(_ sender: Any) {
         sideMenuController?.revealMenu()
     }
@@ -147,7 +159,7 @@ class HomeViewController: BaseViewController {
     
     @IBAction func timeAction(_ sender: UIButton) {
         ActionSheetDatePicker.show(withTitle: "", datePickerMode: .dateAndTime, selectedDate: Date(), doneBlock: { picker, value, index in
-           let str = DateFormatter.localizedString(from: (value as! Date), dateStyle: .none, timeStyle: .short)
+            _ = DateFormatter.localizedString(from: (value as! Date), dateStyle: .none, timeStyle: .short)
             
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -281,7 +293,7 @@ extension HomeViewController:ModernSearchBarDelegate{
                 break
             }
         }
-        modernSearchBar.closeSuggestionsView()
+//        modernSearchBar.closeSuggestionsView() TO DO
     }
     
     ///Called if you use Custom Item suggestion list

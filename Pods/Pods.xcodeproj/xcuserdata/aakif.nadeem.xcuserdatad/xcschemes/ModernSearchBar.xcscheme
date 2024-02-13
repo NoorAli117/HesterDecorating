@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1240"
+   LastUpgradeVersion = "1300"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "873002DBC460B8090EFD7E391AA04141"
-               BuildableName = "SideMenuSwift.framework"
-               BlueprintName = "SideMenuSwift"
+               BlueprintIdentifier = "555D73F4B464D6B72099C524F25F3694"
+               BuildableName = "ModernSearchBar.framework"
+               BlueprintName = "ModernSearchBar"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

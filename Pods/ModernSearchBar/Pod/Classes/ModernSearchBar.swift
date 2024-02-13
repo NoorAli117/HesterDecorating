@@ -49,7 +49,7 @@ public class ModernSearchBar: UISearchBar, UISearchBarDelegate, UITableViewDataS
     public var suggestionsView_backgroundColor: UIColor?
     public var suggestionsView_contentViewColor: UIColor?
     public var suggestionsView_separatorStyle: UITableViewCell.SeparatorStyle = .none
-    public var suggestionsView_selectionStyle: UITableViewCell.SelectionStyle = UITableViewCell.SelectionStyle.none
+    public var suggestionsView_selectionStyle: UITableViewCell.SelectionStyle = .none
     public var suggestionsView_verticalSpaceWithSearchBar: CGFloat = 3
     
     public var suggestionsView_searchIcon_height: CGFloat = 17
@@ -336,7 +336,7 @@ public class ModernSearchBar: UISearchBar, UISearchBarDelegate, UITableViewDataS
         }
     }
     
-    open func closeSuggestionsView(){
+    private func closeSuggestionsView(){
         if (self.isSuggestionsViewOpened == true){
             self.animationClosing()
             self.isSuggestionsViewOpened = false

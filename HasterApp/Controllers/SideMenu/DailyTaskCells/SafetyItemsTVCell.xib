@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SafetyItemsTVCell" id="KGk-i7-Jjw" customClass="SafetyItemsTVCell" customModule="HasterApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="RLY-eZ-ok5">
+                        <rect key="frame" x="10" y="0.0" width="300" height="44"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lmm-Jd-qEb">
+                                <rect key="frame" x="0.0" y="0.0" width="175" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJK-j8-gdO">
+                                        <rect key="frame" x="0.0" y="11.666666666666664" width="165" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="8ym-LW-fUN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="LJK-j8-gdO" firstAttribute="centerY" secondItem="lmm-Jd-qEb" secondAttribute="centerY" id="5Lp-E7-7vD"/>
+                                    <constraint firstItem="LJK-j8-gdO" firstAttribute="leading" secondItem="lmm-Jd-qEb" secondAttribute="leading" id="jUV-qE-1CU"/>
+                                    <constraint firstAttribute="trailing" secondItem="LJK-j8-gdO" secondAttribute="trailing" constant="10" id="qJk-gs-RzI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TEV-Yd-Xhf">
+                                <rect key="frame" x="175" y="0.0" width="125" height="44"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Oob-2O-Tip">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="44"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOO-ZI-jdX">
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="44"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXG-9j-pLd" customClass="DLRadioButton">
+                                                        <rect key="frame" x="2.6666666666666572" y="12" width="20" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="9VF-dW-R9U"/>
+                                                            <constraint firstAttribute="height" constant="20" id="EvB-I4-obK"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                <real key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                <color key="value" red="0.12941176469999999" green="0.086274509799999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                                                <color key="value" red="0.12941176469999999" green="0.086274509799999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="yesSectionButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9nT-be-Xbg"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="lXG-9j-pLd" firstAttribute="centerX" secondItem="nOO-ZI-jdX" secondAttribute="centerX" id="VWe-OI-uyr"/>
+                                                    <constraint firstItem="lXG-9j-pLd" firstAttribute="centerY" secondItem="nOO-ZI-jdX" secondAttribute="centerY" id="mpH-Uu-zwW"/>
+                                                    <constraint firstAttribute="width" constant="25" id="wtw-fo-4uI"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mBP-DT-AZb">
+                                                <rect key="frame" x="35" y="0.0" width="25" height="44"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yx-4j-q5u" customClass="DLRadioButton">
+                                                        <rect key="frame" x="2.6666666666666572" y="12" width="20" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="DlX-vX-OW3"/>
+                                                            <constraint firstAttribute="width" constant="20" id="pWp-I2-zVo"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                <real key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                <color key="value" red="0.12941176469999999" green="0.086274509799999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                                                <color key="value" red="0.12941176469999999" green="0.086274509799999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="noSectionButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hXV-fn-xlF"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="1Yx-4j-q5u" firstAttribute="centerX" secondItem="mBP-DT-AZb" secondAttribute="centerX" id="0ta-2V-pzy"/>
+                                                    <constraint firstAttribute="width" constant="25" id="Jyx-h3-rLL"/>
+                                                    <constraint firstItem="1Yx-4j-q5u" firstAttribute="centerY" secondItem="mBP-DT-AZb" secondAttribute="centerY" id="ofh-wP-l0F"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfW-d1-lHD">
+                                                <rect key="frame" x="100" y="0.0" width="25" height="44"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivK-Pt-8Y1" customClass="DLRadioButton">
+                                                        <rect key="frame" x="2.6666666666666856" y="12" width="20" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="gmM-Fr-ZFU"/>
+                                                            <constraint firstAttribute="height" constant="20" id="q7O-QX-yt8"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                <real key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                <color key="value" red="0.12941176469999999" green="0.086274509799999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                                                <color key="value" red="0.12941176469999999" green="0.086274509799999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="NASectionButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="m6G-6Q-a1K"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="ivK-Pt-8Y1" firstAttribute="centerY" secondItem="cfW-d1-lHD" secondAttribute="centerY" id="1n5-bo-wgX"/>
+                                                    <constraint firstAttribute="width" constant="25" id="Iue-wE-bo6"/>
+                                                    <constraint firstItem="ivK-Pt-8Y1" firstAttribute="centerX" secondItem="cfW-d1-lHD" secondAttribute="centerX" id="cth-HV-2pE"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Oob-2O-Tip" secondAttribute="bottom" id="B5J-3R-s6Z"/>
+                                    <constraint firstAttribute="width" constant="125" id="Nun-EO-0Ry"/>
+                                    <constraint firstItem="Oob-2O-Tip" firstAttribute="top" secondItem="TEV-Yd-Xhf" secondAttribute="top" id="VAy-bd-jry"/>
+                                    <constraint firstItem="Oob-2O-Tip" firstAttribute="leading" secondItem="TEV-Yd-Xhf" secondAttribute="leading" id="aAy-EY-EIQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oob-2O-Tip" secondAttribute="trailing" id="dKc-BB-elp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="ZGn-g1-Zh7"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RLY-eZ-ok5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7RI-DF-T5j"/>
+                    <constraint firstAttribute="trailing" secondItem="RLY-eZ-ok5" secondAttribute="trailing" constant="10" id="UNe-6N-eFK"/>
+                    <constraint firstAttribute="bottom" secondItem="RLY-eZ-ok5" secondAttribute="bottom" id="hOM-kK-nCG"/>
+                    <constraint firstItem="RLY-eZ-ok5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="vBb-Df-odf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="NASelectionbtn" destination="ivK-Pt-8Y1" id="oL6-bA-CPA"/>
+                <outlet property="mainTextLabel" destination="LJK-j8-gdO" id="kWH-Qa-jry"/>
+                <outlet property="noSelectionbtn" destination="1Yx-4j-q5u" id="MoG-N3-Yc4"/>
+                <outlet property="yesSelectionbtn" destination="lXG-9j-pLd" id="poH-Ty-qLM"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="20"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
