@@ -1278,8 +1278,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 12.0";
@@ -1929,6 +1929,23 @@
 			};
 			name = Debug;
 		};
+		3FA48615364F5278A5BC66B7DDD1BED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 006BEB14952D593293463250D6588F0A /* ModernSearchBar.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ModernSearchBar";
+				IBSC_MODULE = ModernSearchBar;
+				INFOPLIST_FILE = "Target Support Files/ModernSearchBar/ResourceBundle-ModernSearchBar-ModernSearchBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = ModernSearchBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		5B349BBE7A354567E5442FEC4C93109C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 006BEB14952D593293463250D6588F0A /* ModernSearchBar.debug.xcconfig */;
@@ -2242,23 +2259,6 @@
 			};
 			name = Release;
 		};
-		BE4595614FBAB7672BEC15A2BB274685 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 006BEB14952D593293463250D6588F0A /* ModernSearchBar.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ModernSearchBar";
-				IBSC_MODULE = ModernSearchBar;
-				INFOPLIST_FILE = "Target Support Files/ModernSearchBar/ResourceBundle-ModernSearchBar-ModernSearchBar-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = ModernSearchBar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		C24518E891FAA59668669823639498EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F01BE62FA10C0698601191BD3235E54 /* DropDown.release.xcconfig */;
@@ -2329,23 +2329,6 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D0FE8A59FCA80DAEDCAF31A9833295E9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77DFC5E8061A6C9BE7235A75975AD0B9 /* ModernSearchBar.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ModernSearchBar";
-				IBSC_MODULE = ModernSearchBar;
-				INFOPLIST_FILE = "Target Support Files/ModernSearchBar/ResourceBundle-ModernSearchBar-ModernSearchBar-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = ModernSearchBar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -2455,6 +2438,23 @@
 			};
 			name = Debug;
 		};
+		E856C655ACC675159BA7CC39D0751D64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77DFC5E8061A6C9BE7235A75975AD0B9 /* ModernSearchBar.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ModernSearchBar";
+				IBSC_MODULE = ModernSearchBar;
+				INFOPLIST_FILE = "Target Support Files/ModernSearchBar/ResourceBundle-ModernSearchBar-ModernSearchBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = ModernSearchBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		F38ADA8C72DE9FB934F7B20DDB72F79C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1F80EC375473AAB591045BAB8963D214 /* ActionSheetPicker-3.0.debug.xcconfig */;
@@ -2533,8 +2533,8 @@
 		19ADC8F2EA7C31E6129D63F8590D0F40 /* Build configuration list for PBXNativeTarget "ModernSearchBar-ModernSearchBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BE4595614FBAB7672BEC15A2BB274685 /* Debug */,
-				D0FE8A59FCA80DAEDCAF31A9833295E9 /* Release */,
+				3FA48615364F5278A5BC66B7DDD1BED7 /* Debug */,
+				E856C655ACC675159BA7CC39D0751D64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

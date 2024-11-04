@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4748D0168A70D5A6A30AC539 /* Pods_HasterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C88D740A59EFF1AEDB336C /* Pods_HasterApp.framework */; };
 		9444C2E02AEBC9120051FE14 /* NoDataFoundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9444C2DF2AEBC9120051FE14 /* NoDataFoundView.xib */; };
 		947334A02A9A399C00A36F49 /* DailyTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9473349F2A9A399C00A36F49 /* DailyTaskViewController.swift */; };
 		947334A82A9A89C800A36F49 /* DailyTaskTopTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947334A62A9A89C800A36F49 /* DailyTaskTopTVCell.swift */; };
@@ -23,6 +22,7 @@
 		94D862842A9B52F200EE2B6F /* SubmitTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D862822A9B52F200EE2B6F /* SubmitTVCell.swift */; };
 		94D862852A9B52F200EE2B6F /* SubmitTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94D862832A9B52F200EE2B6F /* SubmitTVCell.xib */; };
 		94D862872A9B548800EE2B6F /* DailyTasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D862862A9B548800EE2B6F /* DailyTasksModel.swift */; };
+		EA6B09A0FD08A811A35ADCF4 /* Pods_HasterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CD2CBF961809100DE8F519 /* Pods_HasterApp.framework */; };
 		FA0F3D6D28F19203000F3F2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F3D6C28F19203000F3F2A /* AppDelegate.swift */; };
 		FA0F3D6F28F19203000F3F2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F3D6E28F19203000F3F2A /* SceneDelegate.swift */; };
 		FA0F3D7628F19205000F3F2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0F3D7528F19205000F3F2A /* Assets.xcassets */; };
@@ -72,9 +72,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		537B043CF09F9A6135FBDCB2 /* Pods-HasterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasterApp.debug.xcconfig"; path = "Target Support Files/Pods-HasterApp/Pods-HasterApp.debug.xcconfig"; sourceTree = "<group>"; };
-		59C88D740A59EFF1AEDB336C /* Pods_HasterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HasterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E0AD07E75309D4A680B2E57 /* Pods-HasterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasterApp.release.xcconfig"; path = "Target Support Files/Pods-HasterApp/Pods-HasterApp.release.xcconfig"; sourceTree = "<group>"; };
+		2700F544F539EF8AC4AA79D7 /* Pods-HasterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasterApp.debug.xcconfig"; path = "Target Support Files/Pods-HasterApp/Pods-HasterApp.debug.xcconfig"; sourceTree = "<group>"; };
+		29A959212833DB0B4733CDC6 /* Pods-HasterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasterApp.release.xcconfig"; path = "Target Support Files/Pods-HasterApp/Pods-HasterApp.release.xcconfig"; sourceTree = "<group>"; };
+		42CD2CBF961809100DE8F519 /* Pods_HasterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HasterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9444C2DF2AEBC9120051FE14 /* NoDataFoundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataFoundView.xib; sourceTree = "<group>"; };
 		9473349F2A9A399C00A36F49 /* DailyTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTaskViewController.swift; sourceTree = "<group>"; };
 		947334A62A9A89C800A36F49 /* DailyTaskTopTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTaskTopTVCell.swift; sourceTree = "<group>"; };
@@ -145,21 +145,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4748D0168A70D5A6A30AC539 /* Pods_HasterApp.framework in Frameworks */,
+				EA6B09A0FD08A811A35ADCF4 /* Pods_HasterApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5D3CE0591313E3E23FDE6054 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				59C88D740A59EFF1AEDB336C /* Pods_HasterApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		947334A12A9A878C00A36F49 /* DailyTaskCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,10 +174,18 @@
 		9762290C84221E216E660FD9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				537B043CF09F9A6135FBDCB2 /* Pods-HasterApp.debug.xcconfig */,
-				5E0AD07E75309D4A680B2E57 /* Pods-HasterApp.release.xcconfig */,
+				2700F544F539EF8AC4AA79D7 /* Pods-HasterApp.debug.xcconfig */,
+				29A959212833DB0B4733CDC6 /* Pods-HasterApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F81098FF9283B803F23A540D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42CD2CBF961809100DE8F519 /* Pods_HasterApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FA0F3D6028F19203000F3F2A = {
@@ -194,7 +194,7 @@
 				FA0F3D6B28F19203000F3F2A /* HasterApp */,
 				FA0F3D6A28F19203000F3F2A /* Products */,
 				9762290C84221E216E660FD9 /* Pods */,
-				5D3CE0591313E3E23FDE6054 /* Frameworks */,
+				F81098FF9283B803F23A540D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -367,11 +367,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA0F3D7D28F19205000F3F2A /* Build configuration list for PBXNativeTarget "HasterApp" */;
 			buildPhases = (
-				C7C31730138EB9015E2EDBA1 /* [CP] Check Pods Manifest.lock */,
+				520AB8DCEFD7D0423AB42443 /* [CP] Check Pods Manifest.lock */,
 				FA0F3D6528F19203000F3F2A /* Sources */,
 				FA0F3D6628F19203000F3F2A /* Frameworks */,
 				FA0F3D6728F19203000F3F2A /* Resources */,
-				AFDB3E77EF76F4610296321D /* [CP] Embed Pods Frameworks */,
+				2EE0CD0AFAF7E824384BF1A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -438,7 +438,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AFDB3E77EF76F4610296321D /* [CP] Embed Pods Frameworks */ = {
+		2EE0CD0AFAF7E824384BF1A5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -455,7 +455,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HasterApp/Pods-HasterApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C7C31730138EB9015E2EDBA1 /* [CP] Check Pods Manifest.lock */ = {
+		520AB8DCEFD7D0423AB42443 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -612,7 +612,6 @@
 		};
 		FA0F3D7C28F19205000F3F2A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E0AD07E75309D4A680B2E57 /* Pods-HasterApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -667,7 +666,7 @@
 		};
 		FA0F3D7E28F19205000F3F2A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 537B043CF09F9A6135FBDCB2 /* Pods-HasterApp.debug.xcconfig */;
+			baseConfigurationReference = 2700F544F539EF8AC4AA79D7 /* Pods-HasterApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -688,7 +687,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hesterdecorating.us;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -702,7 +701,7 @@
 		};
 		FA0F3D7F28F19205000F3F2A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E0AD07E75309D4A680B2E57 /* Pods-HasterApp.release.xcconfig */;
+			baseConfigurationReference = 29A959212833DB0B4733CDC6 /* Pods-HasterApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -723,7 +722,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hesterdecorating.us;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -291,11 +291,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="459"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fsU-Py-Dy7">
-                                                <rect key="frame" x="40" y="159.5" width="255" height="100"/>
+                                                <rect key="frame" x="40" y="99.5" width="255" height="220"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8RP-5q-SX1">
                                                         <rect key="frame" x="0.0" y="0.0" width="255" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.30980392159999998" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="6PI-H6-7YU"/>
+                                                        </constraints>
                                                         <color key="tintColor" red="0.0" green="0.30980392159999998" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                                         <state key="normal" title="SDS DOCUMENTS">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -326,10 +329,39 @@
                                                             <action selector="submitAction:" destination="4nU-lh-OJ0" eventType="touchUpInside" id="oQd-FQ-vfa"/>
                                                         </connections>
                                                     </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzf-jv-Lwj">
+                                                        <rect key="frame" x="0.0" y="120" width="255" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.30980392159999998" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="tintColor" red="0.0" green="0.30980392159999998" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" title="SAFETY MANUAL">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="SafetyManualAction:" destination="4nU-lh-OJ0" eventType="touchUpInside" id="0hi-wU-9KG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vc-4Q-DrH">
+                                                        <rect key="frame" x="0.0" y="180" width="255" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.30980392159999998" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="tintColor" red="0.0" green="0.30980392159999998" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" title="CHEMICAL INVENTORY">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="ChemicalInventoryAction:" destination="4nU-lh-OJ0" eventType="touchUpInside" id="fiD-PH-rfp"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="0DP-9A-Vh9"/>
-                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1617,6 +1649,37 @@
             </objects>
             <point key="canvasLocation" x="4" y="865"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="IIS-pm-r6U">
+            <objects>
+                <viewController id="lVk-XI-6pb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IiO-Bc-Xb0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NSH-z7-YjR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uzj-DR-cZW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uzj-DR-cZW" firstAttribute="bottom" secondItem="NSH-z7-YjR" secondAttribute="bottom" id="BSx-W8-dlD"/>
+                            <constraint firstItem="NSH-z7-YjR" firstAttribute="leading" secondItem="uzj-DR-cZW" secondAttribute="leading" id="VCD-cP-LbN"/>
+                            <constraint firstItem="uzj-DR-cZW" firstAttribute="trailing" secondItem="NSH-z7-YjR" secondAttribute="trailing" id="ctt-lK-E5F"/>
+                            <constraint firstItem="NSH-z7-YjR" firstAttribute="top" secondItem="uzj-DR-cZW" secondAttribute="top" id="nwi-T4-TPd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rzp-9z-Pwk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="1587.256371814093"/>
+        </scene>
         <!--Menu View Controller-->
         <scene sceneID="vVK-rN-Vcj">
             <objects>
@@ -1664,20 +1727,20 @@
                                         </view>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" id="NS8-Um-8xd" customClass="SelectionCell" customModule="HasterApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="277" width="300" height="44"/>
+                                                <rect key="frame" x="0.0" y="277" width="300" height="56"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NS8-Um-8xd" id="Dxn-FW-3sn">
-                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="56"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9d-aD-uUz">
-                                                            <rect key="frame" x="59" y="12.5" width="233" height="19"/>
+                                                            <rect key="frame" x="59" y="18.5" width="233" height="19"/>
                                                             <fontDescription key="fontDescription" name="BebasNeuePro-ExpandedRegular" family="Bebas Neue Pro" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oue-Jt-LnY">
-                                                            <rect key="frame" x="24" y="9.5" width="24" height="25"/>
+                                                            <rect key="frame" x="24" y="15.5" width="24" height="25"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="25" id="krM-Bg-D9U"/>
                                                                 <constraint firstAttribute="width" constant="24" id="oN8-ks-wNj"/>
@@ -2225,7 +2288,7 @@ j</string>
         <image name="doc.fill" catalog="system" width="115" height="128"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="65"/>
         <image name="lock" catalog="system" width="125" height="128"/>
-        <image name="logo" width="250" height="110"/>
+        <image name="logo" width="300" height="85"/>
         <image name="logout" width="13" height="14"/>
         <image name="pe" width="60" height="54"/>
         <image name="pencil" catalog="system" width="128" height="113"/>

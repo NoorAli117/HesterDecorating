@@ -73,9 +73,13 @@ class HomeViewController: BaseViewController {
     }
     
     @IBAction func SDSDocumentAction(_ sender: Any) {
-        let loginVC = SDSViewController.instantiate(storyboardName: "Main")
-        loginVC.modalPresentationStyle = .fullScreen
-        present(loginVC, animated: true, completion: nil)
+//        let loginVC = SDSViewController.instantiate(storyboardName: "Main")
+//        loginVC.modalPresentationStyle = .fullScreen
+//        present(loginVC, animated: true, completion: nil)
+        
+        if let url = URL(string: "https://hesterdecorating.sds.center/") {
+            UIApplication.shared.open(url)
+        }
     }
     
     @IBAction func DailyHazardAction(_ sender: Any) {
@@ -84,6 +88,17 @@ class HomeViewController: BaseViewController {
         present(loginVC, animated: true, completion: nil)
     }
     
+    @IBAction func SafetyManualAction(_ sender: Any) {
+        if let url = URL(string: "https://hpd-painters.com/app/safety-manual.pdf") {
+            UIApplication.shared.open(url)
+        }
+    }
+
+    @IBAction func ChemicalInventoryAction(_ sender: Any) {
+        if let url = URL(string: "https://job.hpd-painters.com/chemical-inventory/") {
+            UIApplication.shared.open(url)
+        }
+    }
     @IBAction func menuAction(_ sender: Any) {
         sideMenuController?.revealMenu()
     }
