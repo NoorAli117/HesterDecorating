@@ -61,7 +61,7 @@
 		50EDFC88D8E5515FEA35B2CD43715CAA /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = EF487375EDA690C13FCFE1FF0645F860 /* ActionSheetDatePicker.m */; };
 		515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B3579E5C9071C7EA75A889B9B07D25 /* DropDown+Appearance.swift */; };
 		529173B31EFCD3D199E79866AFBEC86C /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34059CFCBB8E040BDA27814E982147A /* HTTPHeaders.swift */; };
-		540E904FE13F6EF1D285DF64A3839B19 /* ModernSearchBar-ModernSearchBar in Resources */ = {isa = PBXBuildFile; fileRef = DC9C93914C5CE8FFC7DD61CA889ADB3B /* ModernSearchBar-ModernSearchBar */; };
+		540E904FE13F6EF1D285DF64A3839B19 /* ModernSearchBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC9C93914C5CE8FFC7DD61CA889ADB3B /* ModernSearchBar.bundle */; };
 		558986D0D52FC340DE534D4F38CA8D3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBDDDA06C270CDAEB8A29C88D0D422E /* UIKit.framework */; };
 		5ACC6D14826075E24FA03017A7C30687 /* UIView+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857FA8CF98BF27C74BC6AC6F708C653 /* UIView+Container.swift */; };
 		5B146593134722DB552DABC07E263833 /* BasicTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF2AE5C4F4F3B83A71901862D6D55D6 /* BasicTransitionAnimator.swift */; };
@@ -281,12 +281,12 @@
 		38A84EA882367461A76CB4079D7700AD /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
 		39C2930D491F3BF05AEEB68728C14458 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		3D6645585807772D4E16938BF8D5624D /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
-		3E26BA03994713FBEB9C3406695782F1 /* DLRadioButton */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DLRadioButton; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E26BA03994713FBEB9C3406695782F1 /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB5FDF7E297DCC90C5A1312FEDD0254 /* DLRadioButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.debug.xcconfig; sourceTree = "<group>"; };
 		42557E92A8EF30B896FCAC30FD48E769 /* Segue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Segue.swift; path = Sources/SideMenu/Segue.swift; sourceTree = "<group>"; };
 		43DF45AEAC5AD59B71A6916337A00C54 /* Pods-HasterApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HasterApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4540B02D81CB9CA8EB329F62A420021E /* IQKeyboardManager+OrientationNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+OrientationNotification.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+OrientationNotification.swift"; sourceTree = "<group>"; };
-		465E0063BF8ECF356C8E908E2DA596A3 /* Pods-HasterApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HasterApp"; path = Pods_HasterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		465E0063BF8ECF356C8E908E2DA596A3 /* Pods_HasterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HasterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C7E2D166AFEB497CDBC3465ABD88F1 /* DLRadioButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DLRadioButton-Info.plist"; sourceTree = "<group>"; };
 		47919A6DAB87E7BA554650201B0E7749 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
 		48E5F1B6A66E1A5330C2E354EF34E180 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
@@ -310,7 +310,7 @@
 		59FC813C2F9B5BE3FC81F77AED0CC612 /* DLRadioButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-prefix.pch"; sourceTree = "<group>"; };
 		5B15A17EA9B4627CCBB4F5E05B8DE8CD /* SideMenuSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SideMenuSwift-Info.plist"; sourceTree = "<group>"; };
 		5C62921608D367F49A0684D3E2C9E687 /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EBDDDA06C270CDAEB8A29C88D0D422E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		5F170CF6A0710659CA5B7F1DB00C72BB /* RappleAIAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RappleAIAction.swift; path = Sources/RappleProgressHUD/RappleAIAction.swift; sourceTree = "<group>"; };
 		603350F5A068B2AF37CF01E93EADDD93 /* Pods-HasterApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HasterApp-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -318,7 +318,7 @@
 		60F457448A65224F7EDD334D04153703 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
 		616BAF3DC8666233C4DA241B72ADC5AA /* ModernSearchBarDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBarDelegate.swift; path = Pod/Classes/ModernSearchBarDelegate.swift; sourceTree = "<group>"; };
 		630FFE96649B4E254925A76D9C9F3D84 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
-		6642040CCC4CD7F37093C2AA4F7FB304 /* SideMenuSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenuSwift; path = SideMenuSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6642040CCC4CD7F37093C2AA4F7FB304 /* SideMenuSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SideMenuSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6713F0B9139BAD84AC5CDA26D2C79A42 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		6786372D339E2B0BD942E6B8681FD9F5 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
 		67CFE1CD18335E196759B6029F0A9606 /* TransitionContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionContext.swift; path = Sources/SideMenu/TransitionContext.swift; sourceTree = "<group>"; };
@@ -330,7 +330,7 @@
 		6F5073C1F1C94BD5F7FD99C054ED2CE6 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDistancePicker.m; path = CoreActionSheetPicker/CoreActionSheetPicker/Pickers/ActionSheetDistancePicker.m; sourceTree = "<group>"; };
 		70141290672829F15E80810533EA79BB /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
 		751C0A63CBE34100899F8F102FF8F3A8 /* DistancePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DistancePickerView.h; path = CoreActionSheetPicker/CoreActionSheetPicker/Pickers/DistancePickerView.h; sourceTree = "<group>"; };
-		7581C4B92AFF654EB671125ABDE55F8D /* ModernSearchBar */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ModernSearchBar; path = ModernSearchBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7581C4B92AFF654EB671125ABDE55F8D /* ModernSearchBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModernSearchBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76ABF3303C90190E1B77B9EEC9ADC355 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
 		77DFC5E8061A6C9BE7235A75975AD0B9 /* ModernSearchBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ModernSearchBar.release.xcconfig; sourceTree = "<group>"; };
 		7806E508C8950D9712214F3F5F28A208 /* DLRadioButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DLRadioButton.modulemap; sourceTree = "<group>"; };
@@ -352,10 +352,10 @@
 		9440FE31A3BB031C4102826E7C6D2674 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		97FD4F8CE9A41AB1E1CC557A519F5062 /* ActionSheetPicker-3.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "ActionSheetPicker-3.0.modulemap"; sourceTree = "<group>"; };
 		9A2E23CD8FAE6C615FB638750D08480D /* ActionSheetPicker-3.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheetPicker-3.0-prefix.pch"; sourceTree = "<group>"; };
-		9B6725B782188F18CB76A740433F14E4 /* DropDown */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C82E4E69838171E1F7E57E797AF8799 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
 		9CF3A87EFBE4D50FE93772A57364B3BD /* DLRadioButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLRadioButton-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E4AE363A81671494491417F9CB60C11 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		9E5BCF684AA64F2EF1AE586061D50208 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
 		9E8882D9FA0DE9EAAB88E82D7A334753 /* IQKeyboardManager+Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+Internal.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+Internal.swift"; sourceTree = "<group>"; };
@@ -368,7 +368,7 @@
 		A571EC9CC9765A81FD061BA20505D845 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		A83E24D7CED21E6B4C775BB2AD9682DF /* ModernSearchBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernSearchBar.swift; path = Pod/Classes/ModernSearchBar.swift; sourceTree = "<group>"; };
 		A857FA8CF98BF27C74BC6AC6F708C653 /* UIView+Container.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Container.swift"; path = "Sources/SideMenu/UIView+Container.swift"; sourceTree = "<group>"; };
-		A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97D079407BB1076D13351427F3C20F8 /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
 		A9B3579E5C9071C7EA75A889B9B07D25 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
 		A9BDA78EE7D9021D004D141264C92350 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetStringPicker.h; path = CoreActionSheetPicker/CoreActionSheetPicker/Pickers/ActionSheetStringPicker.h; sourceTree = "<group>"; };
@@ -383,7 +383,7 @@
 		B48B7FCCEDDBB9E45F69FCA49B7925D5 /* RappleActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RappleActivityIndicatorView.swift; path = Sources/RappleProgressHUD/RappleActivityIndicatorView.swift; sourceTree = "<group>"; };
 		B754EBE16E87F2E3F3C084DADF93687F /* ModernSearchBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModernSearchBar-prefix.pch"; sourceTree = "<group>"; };
 		BC71A5D697B875939C0A64BE32E5B9CC /* SideMenuSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenuSwift.modulemap; sourceTree = "<group>"; };
-		BE0DEE8F8D15E998196ED68BF83FA0AB /* RappleProgressHUD */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RappleProgressHUD; path = RappleProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE0DEE8F8D15E998196ED68BF83FA0AB /* RappleProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RappleProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9BAE3F2DC805B4FED287CA622E90EB /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		BF97990E1D18C4CB1357713908459F32 /* RappleProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RappleProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		BFC091FBDDE327AD4D99D1F305D19930 /* RequestCompression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestCompression.swift; path = Source/RequestCompression.swift; sourceTree = "<group>"; };
@@ -399,13 +399,13 @@
 		CFBAB048B1357DE473A8151370D8532F /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
 		D0A6F40D5B04EC4243DD38342D57ADF7 /* ActionSheetPicker-3.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ActionSheetPicker-3.0.release.xcconfig"; sourceTree = "<group>"; };
 		D55B426513060E50C2568BA3236FCDA9 /* DLRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = DLRadioButton/DLRadioButton.h; sourceTree = "<group>"; };
-		D6E470A0C684D4FBC08BDF7A28A2A38B /* ActionSheetPicker-3.0 */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "ActionSheetPicker-3.0"; path = ActionSheetPicker_3_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6E470A0C684D4FBC08BDF7A28A2A38B /* ActionSheetPicker_3_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActionSheetPicker_3_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7AF2C2DF528E3D7C9DB6887614EF4E5 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
 		DA7C9882C3DA1881CD7498ACAE463112 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		DB91555917496606C3C6FF7D9B6D2BCA /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
-		DC9C93914C5CE8FFC7DD61CA889ADB3B /* ModernSearchBar-ModernSearchBar */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ModernSearchBar-ModernSearchBar"; path = ModernSearchBar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9C93914C5CE8FFC7DD61CA889ADB3B /* ModernSearchBar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModernSearchBar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0847DD02BA097311F6E79B7BFBE0F2B /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
-		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34059CFCBB8E040BDA27814E982147A /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
 		E34565D8FF8877B4939FA566D9E8256E /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
 		E572EEC94648D7457298703E95454AEB /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
@@ -534,17 +534,17 @@
 		09A5D8D880F961B5CBBD6AA59456BC78 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D6E470A0C684D4FBC08BDF7A28A2A38B /* ActionSheetPicker-3.0 */,
-				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
-				3E26BA03994713FBEB9C3406695782F1 /* DLRadioButton */,
-				9B6725B782188F18CB76A740433F14E4 /* DropDown */,
-				A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift */,
-				7581C4B92AFF654EB671125ABDE55F8D /* ModernSearchBar */,
-				DC9C93914C5CE8FFC7DD61CA889ADB3B /* ModernSearchBar-ModernSearchBar */,
-				465E0063BF8ECF356C8E908E2DA596A3 /* Pods-HasterApp */,
-				BE0DEE8F8D15E998196ED68BF83FA0AB /* RappleProgressHUD */,
-				6642040CCC4CD7F37093C2AA4F7FB304 /* SideMenuSwift */,
-				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */,
+				D6E470A0C684D4FBC08BDF7A28A2A38B /* ActionSheetPicker_3_0.framework */,
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				3E26BA03994713FBEB9C3406695782F1 /* DLRadioButton.framework */,
+				9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */,
+				A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */,
+				7581C4B92AFF654EB671125ABDE55F8D /* ModernSearchBar.framework */,
+				DC9C93914C5CE8FFC7DD61CA889ADB3B /* ModernSearchBar.bundle */,
+				465E0063BF8ECF356C8E908E2DA596A3 /* Pods_HasterApp.framework */,
+				BE0DEE8F8D15E998196ED68BF83FA0AB /* RappleProgressHUD.framework */,
+				6642040CCC4CD7F37093C2AA4F7FB304 /* SideMenuSwift.framework */,
+				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -577,7 +577,6 @@
 				E0847DD02BA097311F6E79B7BFBE0F2B /* IQUIViewController+Additions.swift */,
 				23DC2075C0F9632CBA154D631C6CB699 /* Support Files */,
 			);
-			name = IQKeyboardManagerSwift;
 			path = IQKeyboardManagerSwift;
 			sourceTree = "<group>";
 		};
@@ -683,7 +682,6 @@
 				A0B725F657BA7B0FBA238C98C5A0FB8D /* UIViewController+SideMenu.swift */,
 				57817CE5736606FA7FBBA2F9D856FB80 /* Support Files */,
 			);
-			name = SideMenuSwift;
 			path = SideMenuSwift;
 			sourceTree = "<group>";
 		};
@@ -729,7 +727,6 @@
 				25886050A283C53CA2D312D5DB87F6B2 /* Validation.swift */,
 				E4FEA001847C9D58F1D57158AB3682E6 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -758,7 +755,6 @@
 				131698913566B0DBA8D9FFE33C912B5C /* SWActionSheet.m */,
 				E0106F1B2C79DBB18153770C9C9ECAE9 /* Support Files */,
 			);
-			name = "ActionSheetPicker-3.0";
 			path = "ActionSheetPicker-3.0";
 			sourceTree = "<group>";
 		};
@@ -812,7 +808,6 @@
 				A2E076D32ABD944E02F22D2E02A4A9D9 /* DLRadioButton.m */,
 				32F0BE037ECF15EFC2BB46DFBC5A7DD9 /* Support Files */,
 			);
-			name = DLRadioButton;
 			path = DLRadioButton;
 			sourceTree = "<group>";
 		};
@@ -827,7 +822,6 @@
 				497401DCA05B6EA3EE0F6B626B1BB576 /* Resources */,
 				5ADB5A2B31D732C5CD9A644D01761EE9 /* Support Files */,
 			);
-			name = ModernSearchBar;
 			path = ModernSearchBar;
 			sourceTree = "<group>";
 		};
@@ -849,7 +843,6 @@
 				86D10A232CE682C2133FA7CC80BE29C6 /* RappleProgressHUD.swift */,
 				8D347F224BD3F51155D96EB9F108CAE2 /* Support Files */,
 			);
-			name = RappleProgressHUD;
 			path = RappleProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -881,7 +874,6 @@
 				993D8E98A8E181FB4BB59916201B23FE /* Resources */,
 				F79A04107D7B998886FE16A08622D256 /* Support Files */,
 			);
-			name = DropDown;
 			path = DropDown;
 			sourceTree = "<group>";
 		};
@@ -917,7 +909,6 @@
 				FA5C6153BD30071FB3E9219A945F4353 /* SwiftyJSON.swift */,
 				CC2DB48ABE60F8C92A5B9B967D5FB10C /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -1089,7 +1080,7 @@
 			);
 			name = "Pods-HasterApp";
 			productName = Pods_HasterApp;
-			productReference = 465E0063BF8ECF356C8E908E2DA596A3 /* Pods-HasterApp */;
+			productReference = 465E0063BF8ECF356C8E908E2DA596A3 /* Pods_HasterApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		555D73F4B464D6B72099C524F25F3694 /* ModernSearchBar */ = {
@@ -1108,7 +1099,7 @@
 			);
 			name = ModernSearchBar;
 			productName = ModernSearchBar;
-			productReference = 7581C4B92AFF654EB671125ABDE55F8D /* ModernSearchBar */;
+			productReference = 7581C4B92AFF654EB671125ABDE55F8D /* ModernSearchBar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		873002DBC460B8090EFD7E391AA04141 /* SideMenuSwift */ = {
@@ -1126,7 +1117,7 @@
 			);
 			name = SideMenuSwift;
 			productName = SideMenuSwift;
-			productReference = 6642040CCC4CD7F37093C2AA4F7FB304 /* SideMenuSwift */;
+			productReference = 6642040CCC4CD7F37093C2AA4F7FB304 /* SideMenuSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		95E19C014BAA3A685428F6B791F62918 /* ModernSearchBar-ModernSearchBar */ = {
@@ -1143,7 +1134,7 @@
 			);
 			name = "ModernSearchBar-ModernSearchBar";
 			productName = ModernSearchBar;
-			productReference = DC9C93914C5CE8FFC7DD61CA889ADB3B /* ModernSearchBar-ModernSearchBar */;
+			productReference = DC9C93914C5CE8FFC7DD61CA889ADB3B /* ModernSearchBar.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		A43B25DDF20FCB9228471F8F5135C866 /* ActionSheetPicker-3.0 */ = {
@@ -1161,7 +1152,7 @@
 			);
 			name = "ActionSheetPicker-3.0";
 			productName = ActionSheetPicker_3_0;
-			productReference = D6E470A0C684D4FBC08BDF7A28A2A38B /* ActionSheetPicker-3.0 */;
+			productReference = D6E470A0C684D4FBC08BDF7A28A2A38B /* ActionSheetPicker_3_0.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */ = {
@@ -1179,7 +1170,7 @@
 			);
 			name = IQKeyboardManagerSwift;
 			productName = IQKeyboardManagerSwift;
-			productReference = A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift */;
+			productReference = A8E950A16D00F649C54FFB30F81D7842 /* IQKeyboardManagerSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BED8F38B6D4A3AD6DFF85D18F9F09435 /* DLRadioButton */ = {
@@ -1197,7 +1188,7 @@
 			);
 			name = DLRadioButton;
 			productName = DLRadioButton;
-			productReference = 3E26BA03994713FBEB9C3406695782F1 /* DLRadioButton */;
+			productReference = 3E26BA03994713FBEB9C3406695782F1 /* DLRadioButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */ = {
@@ -1215,7 +1206,7 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */;
+			productReference = E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
@@ -1233,7 +1224,7 @@
 			);
 			name = DropDown;
 			productName = DropDown;
-			productReference = 9B6725B782188F18CB76A740433F14E4 /* DropDown */;
+			productReference = 9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
@@ -1251,7 +1242,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FEBB0AF339A0BACF1A004A1E44E9BE9D /* RappleProgressHUD */ = {
@@ -1269,7 +1260,7 @@
 			);
 			name = RappleProgressHUD;
 			productName = RappleProgressHUD;
-			productReference = BE0DEE8F8D15E998196ED68BF83FA0AB /* RappleProgressHUD */;
+			productReference = BE0DEE8F8D15E998196ED68BF83FA0AB /* RappleProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1370,7 +1361,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				540E904FE13F6EF1D285DF64A3839B19 /* ModernSearchBar-ModernSearchBar in Resources */,
+				540E904FE13F6EF1D285DF64A3839B19 /* ModernSearchBar.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

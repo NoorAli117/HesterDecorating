@@ -15,12 +15,16 @@ class MenuViewController: UIViewController {
     //private let disposeBag = DisposeBag()
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var versionLbl: UILabel!
     @IBOutlet weak var profileImages: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     
     private var themeColor = UIColor.white
-    var sideMenuDataSource : [String] = ["SDS Documents", "Daily Task", "Job History","Safety Manual","Logout"]
-    var sideMenuDataSourceImages : [String] = ["sds","sds","jh","cp","lg"]
+//    var sideMenuDataSource : [String] = ["SDS Documents", "Daily Task", "Job History","Safety Manual","Logout"]
+//    var sideMenuDataSourceImages : [String] = ["sds","sds","jh","cp","lg"]
+    
+    var sideMenuDataSource : [String] = ["Safety Manual", "Chemical Inventory", "Logout"]
+    var sideMenuDataSourceImages : [String] = ["cp","cp","lg"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,6 +35,7 @@ class MenuViewController: UIViewController {
         sideMenuController?.cache(viewControllerGenerator: {
             self.storyboard?.instantiateViewController(withIdentifier: "FeedsViewController")
         }, with: "1")
+        versionLbl.text = "Version \(Bundle.main.releaseVersionNumber ?? "")"
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -120,28 +125,31 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
 
        // sideMenuController?.hideMenu()
         if indexPath.row == 0 {
+            if let url = URL(string: "https://job.hpd-painters.com/downloads/") {
+                UIApplication.shared.open(url)
+            }
             
-            let loginVC = SDSViewController.instantiate(storyboardName: "Main")
-            loginVC.modalPresentationStyle = .fullScreen
-            present(loginVC, animated: true, completion: nil)
+//            let loginVC = SDSViewController.instantiate(storyboardName: "Main")
+//            loginVC.modalPresentationStyle = .fullScreen
+//            present(loginVC, animated: true, completion: nil)
         }
 //        else if indexPath.row == 1 {
 //            let loginVC = CurrentPeriodViewController.instantiate(storyboardName: "Main")
 //            loginVC.modalPresentationStyle = .fullScreen
 //            present(loginVC, animated: true, completion: nil)
 //        }
+//        else if indexPath.row == 1 {
+//            let loginVC = DailyTaskViewController.instantiate(storyboardName: "Main")
+//            loginVC.modalPresentationStyle = .fullScreen
+//            present(loginVC, animated: true, completion: nil)
+//        }
+//        else if indexPath.row == 2 {
+//            let loginVC = JobHistoryViewController.instantiate(storyboardName: "Main")
+//            loginVC.modalPresentationStyle = .fullScreen
+//            present(loginVC, animated: true, completion: nil)
+//        }
         else if indexPath.row == 1 {
-            let loginVC = DailyTaskViewController.instantiate(storyboardName: "Main")
-            loginVC.modalPresentationStyle = .fullScreen
-            present(loginVC, animated: true, completion: nil)
-        }
-        else if indexPath.row == 2 {
-            let loginVC = JobHistoryViewController.instantiate(storyboardName: "Main")
-            loginVC.modalPresentationStyle = .fullScreen
-            present(loginVC, animated: true, completion: nil)
-        }
-        else if indexPath.row == 3 {
-            if let url = URL(string: "https://job.hpd-painters.com/downloads/") {
+            if let url = URL(string: "https://job.hpd-painters.com/chemical-inventory/") {
                 UIApplication.shared.open(url)
             }
         }
@@ -162,4 +170,13 @@ class SelectionCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bulaImages: UIImageView!
     
+}
+
+extension Bundle {
+    var releaseVersionNumber: String? {
+        return infoDictionary?["CFBundleShortVersionString"] as? String
+    }
+    var buildVersionNumber: String? {
+        return infoDictionary?["CFBundleVersion"] as? String
+    }
 }

@@ -734,7 +734,6 @@ open class SideMenuController: UIViewController {
                 self.menuContainerView.frame = self.sideMenuFrame(visibility: self.isMenuRevealed, targetSize: size)
             })
         })
-
         super.viewWillTransition(to: size, with: coordinator)
     }
 }

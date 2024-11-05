@@ -1824,6 +1824,7 @@
                     <connections>
                         <outlet property="profileImages" destination="7gb-HZ-RiO" id="a6I-ON-Ref"/>
                         <outlet property="tableView" destination="JNN-2S-2C3" id="ESf-u5-PLJ"/>
+                        <outlet property="versionLbl" destination="kRW-46-6Wd" id="5Kj-Yj-ydK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EyN-Q8-HHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
